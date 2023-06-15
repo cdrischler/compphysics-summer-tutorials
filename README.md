@@ -55,3 +55,51 @@ Quarto:
  
 Quarto example:
 * https://nasa-openscapes.github.io/earthdata-cloud-cookbook/
+
+
+## Setting up the software environment
+
+We use VirtualBox to virtualize Ubuntu Linux on your host computer, which can run Microsoft Windows or Apple's macOS. If your system already runs Linux, you can skip this section.
+
+Follow these steps to set up the environment on your lab computer:
+* Download and install [VirtualBox](https://www.virtualbox.org/).
+* Download our [customized VirtualBox hard drive](https://catmailohio-my.sharepoint.com/:u:/g/personal/drischler_ohio_edu/EYlLoSurm6tMq-rGL-Je98IBXPSi9yRtjmuERZPfB9j8Mg?e=bFu9oU), which contains pre-installed Ubuntu Linux and other software. You will need an Ohio U account to access the hard drive. 
+* In VirtualBox, navigate to `File-Import Appliance` in the menu and import the downloaded file (`/Users/cdrischler/ubuntu-compphys.ova`).
+* Start the virtual machine.
+* The default user name _and_ password is `student`. It makes sense to change the password.
+
+> **Note**
+> Using our customized hard drive (instead of installing Ubuntu yourself) is highly recommended. The hard drive can be used, in combination with VirtualBox, on any computer, including your personal computer.
+
+Alternatively, follow these steps to install Ubuntu in VirtualBox yourself:
+* Download and install [VirtualBox](https://www.virtualbox.org/).
+* Download [Ubuntu 22.04.2 LTS](https://ubuntu.com/download/desktop).
+* In VirtualBox click `New` and follow the instructions to install Ubuntu using the downloaded image file. This may take a while.
+* To fix the issue with the resolution, follow:
+```shell
+sudo apt-get update
+sudo apt-get install build-essential gcc make perl dkms
+```
+* insert and install `Guest Additions CD Image` (under `Devices` in the menu) and then shut down the virtual system
+* increase the video memory significantly in the settings
+* reboot the virtual system
+
+We will likely need the following selection of standard software, which can be conveniently downloaded using `apt`:
+```shell
+sudo apt-get install git diffuse kompare gnuplot grace cmake
+sudo apt-get install texlive texmaker 
+sudo apt-get install python3 python3-pip
+sudo apt-get install synaptic
+```
+
+We also install standard Python packages:
+```shell
+python3 -m pip install numpy scipy pandas jupyter matplotlib seaborn scikit-learn tqdm numba
+```
+
+Next, we install software directly from source:
+* [Microsoft Visual Studio Code (for Jupyter development)](https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions)
+* JetBrain's PyCharm Community version (for Python development)
+```shell
+sudo snap install pycharm-community --classic
+```
