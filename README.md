@@ -7,10 +7,11 @@ In preparation for the Fall course, we will collaborate with [Prof. Charlotte El
 
 | Tutorial      | Tutor | Date | 
 | ----------- | ----------- | ----------- |
-| Basic UNIX navigation, vim, and graphics in xmgrace, gnuplot, and matplotlib   |   RN     | TBD | 
-| Git: basics and more   | CD        | TBD | 
-| Basic Python 3 with [PyCharm](https://www.jetbrains.com/pycharm/): numpy, scipy, pandas and basic plotting  | KC       | TBD | 
-| Basic C/C++ and Fortran | TBD        | TBD | 
+| Basic UNIX   |   RN     | 7/18 & 7/20 @ 3 pm | 
+| Basic Python 3: numpy, scipy, pandas  | KC       | 7/25 & 7/27 @ 3 pm | 
+| Basic C/C++ and Fortran | CH & KC        | 8/1 & 1/3 @ 3 pm | 
+| Basis Plotting: xmgrace, gnuplot, and matplotlib | RN        | 8/8 & 8/10 @ 3 pm | 
+| Git: basics and more   | CD        | 8/15 & 8/17 @ 3 pm | 
 
 **Teaching assistants** for these tutorials will be (in alphabetical order) [Kanishk Chauhan](https://www.ohio.edu/cas/kc303218) (KC) and [Rawan Nowier](https://www.ohio.edu/cas/rn757120) (RN).
 
