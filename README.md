@@ -9,7 +9,7 @@ In preparation for the Fall course, we will collaborate with [Prof. Charlotte El
 | ----------- | ----------- | ----------- |
 | Basic UNIX   |   RN     | 7/18 & 7/20 @ 3 pm | 
 | Basic Python 3: numpy, scipy, pandas  | KC       | 7/25 & 7/27 @ 3 pm | 
-| Basic C/C++ and Fortran | CH & KC        | 8/1 & 1/3 @ 3 pm | 
+| Basic C/C++ and Fortran | CH & KC        | 8/1 & 8/3 @ 3 pm | 
 | Basis Plotting: xmgrace, gnuplot, and matplotlib | RN        | 8/8 & 8/10 @ 3 pm | 
 | Git: basics and more   | CD        | 8/15 & 8/17 @ 3 pm | 
 
