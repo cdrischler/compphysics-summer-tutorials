@@ -1,6 +1,6 @@
 # Computational Physics Summer Tutorials 2023
 
-To help students get prepared for the fall semester course *Computer Simulation Methods in Physics (PHYS 4071/5071)* at Ohio University, we offer this year one-hour tutorials, consisting of lectures and hands-on learning, in the Computer Lab in Clippiner Lab. 
+To help students prepare for the fall semester course *Computer Simulation Methods in Physics (PHYS 4071/5071)* at Ohio University, we offer one-hour tutorials this year, consisting of lectures and hands-on learning activities, in the Computer Lab in Clippiner Lab. 
 
 Attending these tutorials is _highly_ recommended (and in your interest) but not mandatory. Contact the instructors (see below) if you cannot participate in the tutorials. 
 
@@ -12,7 +12,7 @@ The following tutorials will be offered this year:
 
 | Tutorial      | Tutor | Dates | 
 | ----------- | ----------- | ----------- |
-| [Basic UNIX](unix_tutorial.ipynb)   |   RN     | 7/18 & 7/20 @ **2:45 pm** | 
+| [Basic UNIX](unix_tutorial.ipynb)   |   RN     | 7/18 @ **2:45 pm** & 7/20 @ **3 pm** | 
 | [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)  | KC       | 7/25 & 7/27 @ 3 pm | 
 | [Basic C/C++ and Fortran](fortranC/README.md) | CH & KC        | 8/1 & 8/3 @ 3 pm | 
 | Basic Plotting: xmgrace, gnuplot, and matplotlib | RN        | 8/8 & 8/10 @ 3 pm | 
@@ -31,7 +31,7 @@ Feel free to suggest topics for future summer tutorials.
 
 ## Setting up the software environment
 
-We use VirtualBox to virtualize Ubuntu Linux on your host computer, which can run Microsoft Windows or Apple's macOS. If your system already runs Linux, you can skip this section.
+We use VirtualBox to virtualize Ubuntu Linux on your host computer, which can run Microsoft Windows or Apple's MacOS. If your system already runs Linux, you can skip this section.
 
 > **Warning**
 > You don't need to follow these steps on the computers in the Computer Lab. Just start up your virtual machine in VirtualBox.
