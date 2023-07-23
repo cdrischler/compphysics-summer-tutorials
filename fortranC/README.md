@@ -1,5 +1,83 @@
 # Tutorial on compiled languages: Fortran & C/C++
 
+## What is Fortran?
+
+`Fortran`, short for `Formula Translator`, was the first widely used upper level programming language
+and originated in the 1050's. Despite its age, it remains a high-performance computing language
+and can be faster than both, C and C++.
+
+Initially designed for scientists and engineers to run large-scale models and simulations in
+areas such as fluid dynamics and organic chemistry, Fortran is still frequently used today by
+physicists.
+Its specialty lies in modeling and simulations, which are essential for numerous fields, including
+Machine Learning. Thus, Fortran is perfectly poised to tackle Data Science problems, as it was invented
+to do decades ago, and it is worthwhile for today's Data Scientists to be aware of it.
+
+One of the reasons Fortran still is still in use is longevity. It is much easier to build on something
+that was originally developed in Fortran (which is backward compatible), rather than starting from
+scratch. Some people make starting from scratch so easy, but many re-engineering projects got stuck due
+to a failure to understand how the original software worked. And who wants to spend a lot of time
+redoing codes -- one would not get to something new before the project time is used up.
+Fortran is also exceptionally good at doing math, and e.g. climate models are nothing if not all about
+crunching data and doing math.
+
+Sure, there are challenges - but find me a language that does not have some challenges.
+
+##Fortran was built around a performance-centric culture
+
+For rather self-explanatory reasons, performance has been the top priority of the high-performance
+computing community.
+The development of Fortran historically had optimization as the main focus. This often meant that, in
+order to give the compiler the best possible chances of aggressively optimizing code, the language
+imposed many restrictions on the programmer.
+Simply put, they made it very hard to write slow code in Fortran, while in other languages, even
+including C, you have the freedom to do things that would lead to slow code.
+
+It should be noted that it took some time for C/C++ compilers to catch up with the speed that the
+Fortran compilers had enjoyed historically, thanks to the straightforward restriction-based approach
+they had put forth since the beginning. For example, the C99 standard introduced restricted pointers,
+which enable better optimization by the compiler.
+
+Over the years, compiler theory and practice improved, and compilers got better at optimizing all sorts
+of code. Consequently, both in Fortran and in other languages, the focus has been shifting towards
+adding features that would enhance the programmers's productivity.
+
+As example, in 2014 16 well known climate models were analyzed. They were all written in Fortran.
+Why do they still use Fortran?
+
+ - *Performance*: Fortran is fast, in cases faster than C, and e.g. climate modeling like much of
+                 scientific computing is all about speed.
+
+ - *Parallelism*: Performance necessitates parallelism, and Fortran implemented this long before other
+                 languages
+
+ - *Reuse*      : Backward compatibility means that exisiting libraries can easily be reused.
+
+ - *Arrays*     : Fortran supports multi-dimensional arrays, slicing, reduction, reshaping, and many
+                 optimization for array based calculations like vectorization
+
+ - *Longevity*  : Models in e.g. Climate science, Fluid Dynamics and similar should not be implemented
+                 in languageas that (i) are not backward compatible, and (ii) always change. If you
+                 write a code in Fortran today, it is still likely to work in 20 years.
+
+ - *Effort*     : Can you imagine how much effort would be involved in re-engineering complex models?
+                 New languages may be problematic in that respect.
+
+ - *MPI*        : The Message Passing Interface (MPI) is a gateway to high-performance computing,
+                 and Fortran handles it well.
+
+
+Fortran was designed for scientific computing. Sure, Fortran is old, but so is Unix, and C as well.
+
+## First Fortran Code
+
+Now, let us learn about
+ 
+ - the Fortran language 
+ - how to run a Fortran code once it is written
+
+
+
 ## Fortran Flags
 
 `gfortran` has many different command line options (also known as flags) that control what the compiler does and how it does it. To use these flags, simply include them on the command line when you run `gfortran`, e.g.
