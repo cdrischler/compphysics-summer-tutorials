@@ -40,7 +40,7 @@ which enable better optimization by the compiler.
 
 Over the years, compiler theory and practice improved, and compilers got better at optimizing all sorts
 of code. Consequently, both in Fortran and in other languages, the focus has been shifting towards
-adding features that would enhance the programmers's productivity.
+adding features that would enhance the programmer's productivity.
 
 As example, in 2014 16 well known climate models were analyzed. They were all written in Fortran.
 Why do they still use Fortran?
@@ -76,21 +76,21 @@ Now, let us learn about
  - the Fortran language 
  - how to run a Fortran code once it is written
 
-Download the tar-file `simplef.tar` to a practice directory (`e.g. Fpractice`) in which you want to work with your fortran codes.
+Download the tar-file `simplef.tar` to a practice directory (`e.g. Fpractice`) in which you want to work with your Fortran codes.
 
 Unpack the file (`tar -xvf simeplef.tar`), and you should see three files with the ending `.f90`.
 Those are your first practice codes.
 
-*Remark on suffixes:* the suffix `.f90` is the accepted standard for all fortran codes using the `free
-source form`. Though there are different fortran standards, like `.f90`, `.f95`, `.f03`, `.f08` and so
-on, that indicate which ansi-standard of fortran version is used, the suffix `*.f90*` means that the
+*Remark on suffixes:* the suffix `.f90` is the accepted standard for all Fortran codes using the `free
+source form`. Though there are different Fortran standards, like `.f90`, `.f95`, `.f03`, `.f08` and so
+on, that indicate which ANSI-standard of Fortran version is used, the suffix `*.f90*` means that the
 source code is in free format, not that the code conforms to the Fortran 90 standard. Code that uses the
 `.f90` suffix can use features from all Fortran standards. 
 
 All Fortran compilers recognize `.f90` as suffix indicating free source form, but some may not recognize
 a suffix as `.f95`, `.f03`, or `.f18`. 
 
-Open `hello.f90` in your favourite editor.
+Open `hello.f90` in your favorite editor.
 
 ```
 
@@ -99,7 +99,11 @@ Open `hello.f90` in your favourite editor.
 
 >> a text comment in your code needs to start with `!` as first character.
 >> a good habit is to comment your code extensively (for yourself and others)  
-!       with good fortran programming habits
+>> `.f90` uses free source form, which means you can start you code line wherever you like.
+>>  My personal preference is still (like in `.f77`) to start at position 7, since this leads in my opinion
+>>   to a more esthetic layout of the code and makes it easier to read
+
+!       with good Fortran programming habits
 !
       implicit none
 
@@ -112,7 +116,7 @@ Open `hello.f90` in your favourite editor.
 !       default input and output
       integer ::  kread=5, kwrite=6
 
->>  Variables must be declared at the beginning of your code. Fortan has as basic variables
+>>  Variables must be declared at the beginning of your code. Fortran has as basic variables
 >>  `real`, `complex``, `logical`, `character`. 
 
 !       default input and output
@@ -148,7 +152,7 @@ Open `hello.f90` in your favourite editor.
       stop 
       end 
 ```
-  
+ 
  I was a bit sloppy with the ending. You could write `end program Hello`
  the command `stop` stops all execution, and `end` ends everything, in this case the program Hello.
  So me being sloppy does not matter.
@@ -157,21 +161,152 @@ Open `hello.f90` in your favourite editor.
 
 Before you can execute or run your code, you must `compile` it, which means you must translate it into
 machine language. This is done with a `compiler`. There are different compilers on the market. We are
-using the `GNU` compiler `gfortran`, which is free and installed in your unix setup. 
+using the `GNU` compiler `gfortran`, which is free and installed in your Unix setup. 
 
 The simplest way to compile is with the command
 
 `gfortran hello.f90`, which will produce a file `a.out` in the directory you compile in.  *Check it out!* 
 
-
-This is the *executabe* which your computer can run.
+This is the *executable* which your computer can run.
 
 **However**, gfortran used this way will always create a file `a.out`. What if you want to have two executables
 in one directory? 
-It is better to name the executable with some recognizeable name.
+It is better to name the executable with some recognizable name.
+If you want your executables having specific names, compile with
+
+`gfortran -o hello hello.f90` , where the executable is not called hello.  *Check it out!* 
+
+The executable is executed by  the command   `./hello` 
+
+<font color="red">**Exercise:**  </font> <br>
+(1) add another line to the code to personalize the hello to your name <br>
+(2) Modify the code so that it calculates the average of three numbers
+
+**Remark:**  The command `gfortran` executes two separate tasks:
+-- The first is translating your Fortran code into machine languages, and a file `hello.o`, the object file is created
+-- The second is to link machine libraries from you computer to create the executable.
+
+If you only want to compile, e.g. to see if you have syntax errors in your code, you can do this with
+the command  `gfortran -c hello.f` .  The `-c` is called a flag for gfortran.  There will be more about flags later.
+
+## Simple Makefile for program hello.f
+
+Instead of typing the previous commands into a command line, one can execute a so-called `Makefile`. 
+A file called `Makefile` tells the `make` program package in a structured manner which source and object
+file depend on other files. It also defines the commands required to compile and link the files.
+
+Here is a simple `Makefile` to create the executable for the program `hello.f90`
+
+```
+FFOPTS = -c 
+.SUFFIXES: .o .f90
+
+OBJS   = hello.o
+
+#-----------------------------------------------------------------------------------
+
+hello : $(OBJS)
+	gfortran -o hello $(OBJS)
+
+hello.o : hello.f90
+	gfortran $(FFOPTS) hello.f90
+
+```
+The top part of this `makefile` contains definitions, e.g. the compiler option is `-c`. Then the suffixes that are used in the execution are given, `.o` and `.f90`, and last the object file `hello.o` 
+
+The bottom part of the `makefile` is executed from the bottom up and the sequence is given as
+to be created: object `hello.o` and this is created from `hello.f90` 
+the command how to create is given in the line below as `gfortran $(FFOPTS) hello.f90`.   The `FFOPTS` is a placeholder for the options defined in the top part.
+After `hello.o` is created, the next directive in the `makefile` is to create the executable `hello` from the object files listed under `OBJS`, and the command to do this is `gfortran -o hello $(OBJS)`.  
+Have in mind, that the indentations are `tabs` and the `make` environment is quite picky about this.
+
+You execute the makefile in your directory with 
+`make -f make.hello` , where the option `-f` points to the filename you give. 
+
+With such a setup you can have several `makefiles` with different names for different codes. 
+You can also compile a bunch of codes with their own object files, which the last command then links together to create the executable.          
+
+## Second Fortran code 
+
+With this code we want to check out numerical precision in computations, here specifically addition of
+small numbers.
+
+```
+      program precision 
+!
+!       check out double precision arithmetic vs. singe precision
+!
+      implicit none
+
+      real :: x
+      double precision :: y
+
+>> real refers to a single precision number,  while double precision to a double precision number. 
+>> the current preferred way is to specify this as real(kind=dp).
+>> to be even more precise, one can guarantee precision to that of the machine-compiler-specific double
+>> precision real using the *kind* function to get the kind of 1.d0 
+
+>> integer, parameter :: dp = kind(1.d0)  
+>> and then specify real (dp) :: something
 
 
+      integer :: i
 
+      integer :: kread=5, kwrite=6
+
+!
+      x=1.
+      y=1.d0
+
+>>  a single precision number is given by 1. and a double precision by 1.d0
+
+>>  Here a do-loop is executed 10^6 times adding a small number to 1. or 1.d0
+      do i=1,1000000
+        x = x + 0.000001
+        y = y + 0.000001d0
+      end do
+
+      write (kwrite,*) 'Which number is closer to two?'
+      write (kwrite,*) '  x = ',x
+      write (kwrite,*) '  y = ',y
+     
+      stop 
+      end 
+```
+
+Run the code and get the answer. Are you surprised? 
+
+
+<font color="red">**Exercise:**  </font> <br>
+Look at the 3rd code in the tar-file, `precisionm.f90`, and either look at it first and try to figure out
+what the code is supposed to do, then run it, or run it first and then look at the code
+
+Your course on Computational Physics should go into the representation of numbers on the computer in
+more depth. You have to remember, that the most elementary units of the computer memory are the two
+*bits* (binary integers) `0` and `1`. This means that all numbers are stored in memory in *binary8 form,
+that is, as long strings of zeroes and ones. This would be awkward to look at for people. Consequently,
+binary strings are converted to *octal*, *decimal*, or *hexadecimal* numbers before results are
+communicated to people. While *octal* and *hexadecimal* are nice since the conversion does not loose
+precision, the for us most useful *decimal* numbers leads to a decrease in precision, unless the number
+is a power of 2. 
+
+## First computational problem: Summing Series.
+
+A classic numerical problem is the summation of a series to evaluate a function. Let us consider
+the power series
+
+$$ e^{-x} = 1 - x + \frac{x^2}{2!} - \frac{x^3}{3!} + \cdots $$ 
+
+which is **exact** when summed up to all orders.
+
+While an infinite series is exact in a mathematical sense, to use it as an algorithm, we must stop the
+sum at some point, so that the algorithm reads
+
+$$ e^{-x} \simeq \sum_{n=0}^{N} \frac{(-x)^n}{n!} $$
+
+How do we decide to stop? 
+
+Before thinking about that we need to write a code for the summation. 
 
 ## Fortran Flags
 
