@@ -76,6 +76,101 @@ Now, let us learn about
  - the Fortran language 
  - how to run a Fortran code once it is written
 
+Download the tar-file `simplef.tar` to a practice directory (`e.g. Fpractice`) in which you want to work with your fortran codes.
+
+Unpack the file (`tar -xvf simeplef.tar`), and you should see three files with the ending `.f90`.
+Those are your first practice codes.
+
+*Remark on suffixes:* the suffix `.f90` is the accepted standard for all fortran codes using the `free
+source form`. Though there are different fortran standards, like `.f90`, `.f95`, `.f03`, `.f08` and so
+on, that indicate which ansi-standard of fortran version is used, the suffix `*.f90*` means that the
+source code is in free format, not that the code conforms to the Fortran 90 standard. Code that uses the
+`.f90` suffix can use features from all Fortran standards. 
+
+All Fortran compilers recognize `.f90` as suffix indicating free source form, but some may not recognize
+a suffix as `.f95`, `.f03`, or `.f18`. 
+
+Open `hello.f90` in your favourite editor.
+
+```
+
+      program Hello
+>>  this is a main program and should have name - best the name for the file `hello.f90`
+
+>> a text comment in your code needs to start with `!` as first character.
+>> a good habit is to comment your code extensively (for yourself and others)  
+!       with good fortran programming habits
+!
+      implicit none
+
+>>  this statement means that **all** variables must be declared. 
+>>  it is very useful to immediately detect while compiling if you e.g. mistyped a variable.
+
+!       declare variables
+      real ::  first, second, average
+
+!       default input and output
+      integer ::  kread=5, kwrite=6
+
+>>  Variables must be declared at the beginning of your code. Fortan has as basic variables
+>>  `real`, `complex``, `logical`, `character`. 
+
+!       default input and output
+!      data kread/5/, kwrite/6/
+
+>>  There are **two** default units associated with executing a Fortran code:
+>>  5 for reading input (from file or screen), 6 for writing to a file or screen
+>>  I put 2 different ways into the code how to assign variables.  
+
+!        
+!        talk to the computer
+!
+      write (kwrite,*) 'Hello, world'
+
+>>  here `Hello, world` is written to unit 6, possibly your screen.
+>>  the `*` means that the output is unformatted.
+
+      write (kwrite,*) 'Input first variable:'
+      read (kread,*) first
+      write (kwrite,*) 'first variable:', first
+
+
+      write (kwrite,*) 'Input second variable:'
+      read (kread,*) second
+      write (kwrite,*) 'second variable:', second
+
+      average = (first+second)*0.5
+
+      write (kwrite,*) 'average of first and second variable is:', average
+
+
+
+      stop 
+      end 
+```
+  
+ I was a bit sloppy with the ending. You could write `end program Hello`
+ the command `stop` stops all execution, and `end` ends everything, in this case the program Hello.
+ So me being sloppy does not matter.
+
+## Executing your first code
+
+Before you can execute or run your code, you must `compile` it, which means you must translate it into
+machine language. This is done with a `compiler`. There are different compilers on the market. We are
+using the `GNU` compiler `gfortran`, which is free and installed in your unix setup. 
+
+The simplest way to compile is with the command
+
+`gfortran hello.f90`, which will produce a file `a.out` in the directory you compile in.  *Check it out!* 
+
+
+This is the *executabe* which your computer can run.
+
+**However**, gfortran used this way will always create a file `a.out`. What if you want to have two executables
+in one directory? 
+It is better to name the executable with some recognizeable name.
+
+
 
 
 ## Fortran Flags
