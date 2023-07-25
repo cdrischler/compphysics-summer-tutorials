@@ -360,7 +360,13 @@ There are two codes in the directory:
 
 Download both codes to your practice directory. Though both give you the same answer to the printed precision, one is better than the other.
 
- 
+> **Tip**
+> Note thate we also provide similar C files: `exp-good.cc` and `exp-bad.cc`. Feel free to explore these using `g++` instead of `gfortran`:
+> ```shell
+> g++ exp-good.cc -o good
+> g++ exp-bad.cc -o bad
+> ```
+
 <font color="red">**Exercise and Homework:**  </font> <br>
 - Understand how both codes implement the series algorithm.
 - Convince yourself as well as the TA why one is better than the other.
