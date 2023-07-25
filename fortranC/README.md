@@ -299,7 +299,7 @@ $$ e^{-x} = 1 - x + \frac{x^2}{2!} - \frac{x^3}{3!} + \cdots $$
 
 which is **exact** when summed up to all orders.
 
-While an infinite series is exact in a mathematical sense, to use it as an algorithm, we must stop the
+While an infinite series is exact in a mathematical sense, to use it as an **algorithm**, we must stop the
 sum at some point, so that the algorithm reads
 
 $$ e^{-x} \simeq \sum_{n=0}^{N} \frac{(-x)^n}{n!} $$
@@ -307,6 +307,34 @@ $$ e^{-x} \simeq \sum_{n=0}^{N} \frac{(-x)^n}{n!} $$
 How do we decide to stop? 
 
 Before thinking about that we need to write a code for the summation. 
+
+<font color="red">**Exercise:**  </font> <br>
+Take 5 minutes to think about how you would code this problem. Do **not** get stuck by thinking about 
+specific Fortran commands, rather think in terms of `Pseude-code`, where you just write down the steps
+and manipulations you need to eventually code. And think about what you will need to define in order to
+the the equation steps into a code.
+
+Obviously, there are most of the time more than one way to manipulate and code a mathematical problem
+into an algorithm, and then to implement this algorithm into a code.
+
+Such implementations can be either clever or not so clever, fast or slow, or some can be more efficient
+than others. 
+
+Do not be disheartened by such a comment, writing good codes is something everybody needs to learn. Your
+course in computational physics will hopefully give a start on this. Truthfully, writing efficient and
+good code is a life long journey of any computational physicist. 
+
+Now, let us look at two implementations of an algorithm to compute $e^{-x}$ as series. 
+There are two codes in the directory:
+-- `exp-good.f90`
+-- `exp-bad.f90` 
+Download both codes to your practice directory. Though both give you the same answer to the printed
+precision, one is better than the other.
+
+ 
+<font color="red">**Exercise and Homework:**  </font> <br>
+-- Understand how both codes implement the series algorithm.
+-- Convince yourself as well as the TA why one is better than the other.
 
 ## Fortran Flags
 
@@ -362,6 +390,15 @@ Warning flags tell gfortran to warn you about legal but potentially questionable
         -pedantic: Generate warnings about language features that are supported by gfortran but are not part of the official Fortran 95 standard. Useful if you want be sure your code will work with any Fortran 95 compiler.
 
         -Werror: Turn warnings into errors.
+
+###Other useful flags
+Since different flavors of fortran compilers may have some extra features, that although being convenient are not standard, it is advisable to code in standard fortran so that your codes are portable to different computers with possibly different implementations of fortran compilers 
+To test if you code is standard fortran use the flag
+
+	-ansi: this will flag all nonstandard commands you used. It is advisable to replace them with standard ones
+If you run into issues because some older fortran standard is used, the flag
+
+	-std=legacy  can be useful. you can also specify a specific standard, e.g. std=f95 
 
 ### Debugging flags
 
