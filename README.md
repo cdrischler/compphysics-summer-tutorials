@@ -14,7 +14,7 @@ The following tutorials will be offered this year:
 | ----------- | ----------- | ----------- |
 | [Basic UNIX](unix_tutorial.ipynb)   |   RN     | 7/18 @ **2:45 pm** & 7/20 @ **3 pm** | 
 | [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)  | KC       | 7/25 & 7/27 @ 3 pm | 
-| [Basic C/C++ and Fortran](fortranC/README.md) | CH & KC        | 8/1 & 8/3 @ 3 pm | 
+| [Basic C/C++ and Fortran](fortranC/fortran_c_tutorial.md) | CH & KC        | 8/1 & 8/3 @ 3 pm | 
 | Basic Plotting: xmgrace, gnuplot, and matplotlib | RN        | 8/8 & 8/10 @ 3 pm | 
 | [Basic Git](git-github/README.md)   | CD        | 8/15 & 8/17 @ 3 pm | 
 
