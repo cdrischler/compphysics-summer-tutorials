@@ -71,6 +71,11 @@ Fortran was designed for scientific computing. Sure, Fortran is old, but so is U
 
 ## First Fortran Code
 
+Let's first install [GNU Fortran](https://gcc.gnu.org/fortran/). On Ubuntu, this can be done with the following command:
+```shell
+sudo apt-get install gfortran
+```
+
 Now, let us learn about
  - the Fortran language 
  - how to run a Fortran code once it is written
@@ -104,45 +109,41 @@ Open `hello.f90` in your favorite editor.
 
 ```Fortran
       program Hello
->>  this is a main program and should have name - best the name for the file `hello.f90`
+```
+This is a main program and should have name - best the name for the file `hello.f90`
 
->> a text comment in your code needs to start with `!` as first character.
->> a good habit is to comment your code extensively (for yourself and others)  
->> `.f90` uses free source form, which means you can start you code line wherever you like.
->>  My personal preference is still (like in `.f77`) to start at position 7, since this leads in my opinion
->>   to a more esthetic layout of the code and makes it easier to read
-
+A text comment in your code needs to start with `!` as first character. A good habit is to comment your code extensively (for yourself and others)   `.f90` uses free source form, which means you can start you code line wherever you like. My personal preference is still (like in `.f77`) to start at position 7, since this leads in my opinion to a more esthetic layout of the code and makes it easier to read
+```Fortran
 !       with good Fortran programming habits
 !
       implicit none
-
->>  this statement means that **all** variables must be declared. 
->>  it is very useful to immediately detect while compiling if you e.g. mistyped a variable.
-
+```
+This statement means that **all** variables must be declared. 
+It is very useful to immediately detect while compiling if you e.g. mistyped a variable.
+```Fortran
 !       declare variables
       real ::  first, second, average
 
 !       default input and output
       integer ::  kread=5, kwrite=6
-
->>  Variables must be declared at the beginning of your code. Fortran has as basic variables
->>  `real`, `complex``, `logical`, `character`. 
-
+```
+ Variables must be declared at the beginning of your code. Fortran has as basic variables `real`, `complex`, `logical`, and `character`.
+```Fortran
 !       default input and output
 !      data kread/5/, kwrite/6/
-
->>  There are **two** default units associated with executing a Fortran code:
->>  5 for reading input (from file or screen), 6 for writing to a file or screen
->>  I put 2 different ways into the code how to assign variables.  
-
+```
+There are **two** default units associated with executing a Fortran code:
+5 for reading input (from file or screen), 6 for writing to a file or screen.
+I put 2 different ways into the code how to assign variables.  
+```Fortran
 !        
 !        talk to the computer
 !
       write (kwrite,*) 'Hello, world'
-
->>  here `Hello, world` is written to unit 6, possibly your screen.
->>  the `*` means that the output is unformatted.
-
+```
+Here `Hello, world` is written to unit 6, possibly your screen.
+The `*` means that the output is unformatted.
+```Fortran
       write (kwrite,*) 'Input first variable:'
       read (kread,*) first
       write (kwrite,*) 'first variable:', first
@@ -223,13 +224,11 @@ file depend on other files. It also defines the commands required to compile and
 
 Here is a simple `Makefile` to create the executable for the program `hello.f90`
 
-```Fortran
+```Make
 FFOPTS = -c 
 .SUFFIXES: .o .f90
 
 OBJS   = hello.o
-
-#-----------------------------------------------------------------------------------
 
 hello : $(OBJS)
 	gfortran -o hello $(OBJS)
@@ -269,16 +268,10 @@ small numbers.
 
       real :: x
       double precision :: y
-
->> real refers to a single precision number,  while double precision to a double precision number. 
->> the current preferred way is to specify this as real(kind=dp).
->> to be even more precise, one can guarantee precision to that of the machine-compiler-specific double
->> precision real using the *kind* function to get the kind of 1.d0 
-
->> integer, parameter :: dp = kind(1.d0)  
->> and then specify real (dp) :: something
-
-
+```
+Real refers to a single precision number,  while double precision to a double precision number. The current preferred way is to specify this as `real(kind=dp)`.
+To be even more precise, one can guarantee precision to that of the machine-compiler-specific double precision real using the *kind* function to get the kind of `1.d0`: `integer, parameter :: dp = kind(1.d0)` and then specify `real (dp) :: something`.
+```
       integer :: i
 
       integer :: kread=5, kwrite=6
@@ -286,10 +279,10 @@ small numbers.
 !
       x=1.
       y=1.d0
-
->>  a single precision number is given by 1. and a double precision by 1.d0
-
->>  Here a do-loop is executed 10^6 times adding a small number to 1. or 1.d0
+```
+A single precision number is given by `1.` and a double precision by `1.d0`
+Next, a do-loop is executed $10^6$ times adding a small number to `1.` or `1.d0`.
+```Fortran
       do i=1,1000000
         x = x + 0.000001
         y = y + 0.000001d0
@@ -426,7 +419,7 @@ Warning flags tell gfortran to warn you about legal but potentially questionable
 
         -Werror: Turn warnings into errors.
 
-###Other useful flags
+### Other useful flags
 Since different flavors of fortran compilers may have some extra features, that although being convenient are not standard, it is advisable to code in standard fortran so that your codes are portable to different computers with possibly different implementations of fortran compilers 
 To test if you code is standard fortran use the flag
 
