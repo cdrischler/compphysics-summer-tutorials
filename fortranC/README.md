@@ -86,7 +86,7 @@ wget https://github.com/cdrischler/compphysics-summer-tutorials23/blob/main/fort
 
 Unpack the file via
 ```shell
-tar -xvf simeplef.tar
+tar -xvf simplef.tar
 ```
 and you should see three files with the ending `.f90`.
 Those are your first practice codes.
@@ -247,7 +247,10 @@ After `hello.o` is created, the next directive in the `makefile` is to create th
 Have in mind, that the indentations are `tabs` and the `make` environment is quite picky about this.
 
 You execute the makefile in your directory with 
-`make -f make.hello` , where the option `-f` points to the filename you give. 
+```shell
+make -f make.hello
+```
+where the option `-f` points to the filename you give. 
 
 With such a setup you can have several `makefiles` with different names for different codes. 
 You can also compile a bunch of codes with their own object files, which the last command then links together to create the executable.          
@@ -352,10 +355,10 @@ good code is a life long journey of any computational physicist.
 
 Now, let us look at two implementations of an algorithm to compute $e^{-x}$ as series. 
 There are two codes in the directory:
--- `exp-good.f90`
--- `exp-bad.f90` 
-Download both codes to your practice directory. Though both give you the same answer to the printed
-precision, one is better than the other.
+- `exp-good.f90`
+- `exp-bad.f90` 
+
+Download both codes to your practice directory. Though both give you the same answer to the printed precision, one is better than the other.
 
  
 <font color="red">**Exercise and Homework:**  </font> <br>
