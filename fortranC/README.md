@@ -1,9 +1,11 @@
 # Tutorial on compiled languages: Fortran & C/C++
 
+**Author: Charlotte Elster**
+
 ## What is Fortran?
 
-`Fortran`, short for `Formula Translator`, was the first widely used upper level programming language
-and originated in the 1050's. Despite its age, it remains a high-performance computing language
+`Fortran`, short for `Formula Translator`, was the first widely used upper-level programming language
+and originated in the 1950s. Despite its age, it remains a high-performance computing language
 and can be faster than both, C and C++.
 
 Initially designed for scientists and engineers to run large-scale models and simulations in
@@ -13,7 +15,7 @@ Its specialty lies in modeling and simulations, which are essential for numerous
 Machine Learning. Thus, Fortran is perfectly poised to tackle Data Science problems, as it was invented
 to do decades ago, and it is worthwhile for today's Data Scientists to be aware of it.
 
-One of the reasons Fortran still is still in use is longevity. It is much easier to build on something
+One of the reasons Fortran is still in use is longevity. It is much easier to build on something
 that was originally developed in Fortran (which is backward compatible), rather than starting from
 scratch. Some people make starting from scratch so easy, but many re-engineering projects got stuck due
 to a failure to understand how the original software worked. And who wants to spend a lot of time
@@ -23,7 +25,7 @@ crunching data and doing math.
 
 Sure, there are challenges - but find me a language that does not have some challenges.
 
-##Fortran was built around a performance-centric culture
+## Fortran was built around a performance-centric culture
 
 For rather self-explanatory reasons, performance has been the top priority of the high-performance
 computing community.
@@ -42,29 +44,27 @@ Over the years, compiler theory and practice improved, and compilers got better 
 of code. Consequently, both in Fortran and in other languages, the focus has been shifting towards
 adding features that would enhance the programmer's productivity.
 
-As example, in 2014 16 well known climate models were analyzed. They were all written in Fortran.
+As example, in 2014, 16 well known climate models were analyzed. They were all written in Fortran.
 Why do they still use Fortran?
 
- - *Performance*: Fortran is fast, in cases faster than C, and e.g. climate modeling like much of
+ - **Performance**: Fortran is fast, in cases faster than C, and e.g. climate modeling like much of
                  scientific computing is all about speed.
 
- - *Parallelism*: Performance necessitates parallelism, and Fortran implemented this long before other
-                 languages
+ - **Parallelism**: Performance necessitates parallelism, and Fortran implemented this long before other languages.
 
- - *Reuse*      : Backward compatibility means that exisiting libraries can easily be reused.
+ - **Reuse**: Backward compatibility means that exisiting libraries can easily be reused.
 
- - *Arrays*     : Fortran supports multi-dimensional arrays, slicing, reduction, reshaping, and many
+ - **Arrays**: Fortran supports multi-dimensional arrays, slicing, reduction, reshaping, and many
                  optimization for array based calculations like vectorization
 
- - *Longevity*  : Models in e.g. Climate science, Fluid Dynamics and similar should not be implemented
+ - **Longevity**: Models in e.g. Climate science, Fluid Dynamics and similar should not be implemented
                  in languageas that (i) are not backward compatible, and (ii) always change. If you
                  write a code in Fortran today, it is still likely to work in 20 years.
 
- - *Effort*     : Can you imagine how much effort would be involved in re-engineering complex models?
+ - **Effort**: Can you imagine how much effort would be involved in re-engineering complex models?
                  New languages may be problematic in that respect.
 
- - *MPI*        : The Message Passing Interface (MPI) is a gateway to high-performance computing,
-                 and Fortran handles it well.
+ - **MPI**: The [Message Passing Interface](https://en.wikipedia.org/wiki/Message_Passing_Interface) (MPI) is a gateway to high-performance computing, and Fortran handles it well.
 
 
 Fortran was designed for scientific computing. Sure, Fortran is old, but so is Unix, and C as well.
@@ -72,18 +72,21 @@ Fortran was designed for scientific computing. Sure, Fortran is old, but so is U
 ## First Fortran Code
 
 Now, let us learn about
- 
  - the Fortran language 
  - how to run a Fortran code once it is written
 
-Download the tar-file `simplef.tar` to a practice directory (`e.g. Fpractice`) in which you want to work with your Fortran codes.
+Download the tar-file `simplef.tar` to a practice directory (e.g., `Fpractice`) in which you want to work with your Fortran codes.
 
-Unpack the file (`tar -xvf simeplef.tar`), and you should see three files with the ending `.f90`.
+Unpack the file via
+```shell
+tar -xvf simeplef.tar
+```
+and you should see three files with the ending `.f90`.
 Those are your first practice codes.
 
 *Remark on suffixes:* the suffix `.f90` is the accepted standard for all Fortran codes using the `free
 source form`. Though there are different Fortran standards, like `.f90`, `.f95`, `.f03`, `.f08` and so
-on, that indicate which ANSI-standard of Fortran version is used, the suffix `*.f90*` means that the
+on, that indicate which ANSI-standard of Fortran version is used, the suffix `.f90` means that the
 source code is in free format, not that the code conforms to the Fortran 90 standard. Code that uses the
 `.f90` suffix can use features from all Fortran standards. 
 
@@ -92,8 +95,7 @@ a suffix as `.f95`, `.f03`, or `.f18`.
 
 Open `hello.f90` in your favorite editor.
 
-```
-
+```Fortran
       program Hello
 >>  this is a main program and should have name - best the name for the file `hello.f90`
 
@@ -147,8 +149,6 @@ Open `hello.f90` in your favorite editor.
 
       write (kwrite,*) 'average of first and second variable is:', average
 
-
-
       stop 
       end 
 ```
@@ -161,11 +161,20 @@ Open `hello.f90` in your favorite editor.
 
 Before you can execute or run your code, you must `compile` it, which means you must translate it into
 machine language. This is done with a `compiler`. There are different compilers on the market. We are
-using the `GNU` compiler `gfortran`, which is free and installed in your Unix setup. 
+using the `GNU` compiler `gfortran`, which is free and installed in your UNIX setup. 
+
+> **Tip**
+> If needed, you can install `gfortran` using:
+> ```shell
+> sudo apt-get install gcc
+> ```
 
 The simplest way to compile is with the command
 
-`gfortran hello.f90`, which will produce a file `a.out` in the directory you compile in.  *Check it out!* 
+```shell
+gfortran hello.f90
+```
+which will produce a file `a.out` in the directory you compile in.  *Check it out!* 
 
 This is the *executable* which your computer can run.
 
@@ -174,20 +183,30 @@ in one directory?
 It is better to name the executable with some recognizable name.
 If you want your executables having specific names, compile with
 
-`gfortran -o hello hello.f90` , where the executable is not called hello.  *Check it out!* 
+```shell
+gfortran -o hello hello.f90
+```
+where the executable is not called hello.  *Check it out!* 
 
-The executable is executed by  the command   `./hello` 
+The executable is executed by  the command 
+```shell
+./hello
+``` 
 
 <font color="red">**Exercise:**  </font> <br>
-(1) add another line to the code to personalize the hello to your name <br>
-(2) Modify the code so that it calculates the average of three numbers
+* Add another line to the code to personalize the hello to your name.<br>
+* Modify the code so that it calculates the average of three numbers.
 
 **Remark:**  The command `gfortran` executes two separate tasks:
 -- The first is translating your Fortran code into machine languages, and a file `hello.o`, the object file is created
 -- The second is to link machine libraries from you computer to create the executable.
 
 If you only want to compile, e.g. to see if you have syntax errors in your code, you can do this with
-the command  `gfortran -c hello.f` .  The `-c` is called a flag for gfortran.  There will be more about flags later.
+the command 
+```shell
+gfortran -c hello.f
+```
+The `-c` is called a flag for gfortran.  There will be more about flags later.
 
 ## Simple Makefile for program hello.f
 
@@ -197,7 +216,7 @@ file depend on other files. It also defines the commands required to compile and
 
 Here is a simple `Makefile` to create the executable for the program `hello.f90`
 
-```
+```Fortran
 FFOPTS = -c 
 .SUFFIXES: .o .f90
 
@@ -231,7 +250,7 @@ You can also compile a bunch of codes with their own object files, which the las
 With this code we want to check out numerical precision in computations, here specifically addition of
 small numbers.
 
-```
+```Fortran
       program precision 
 !
 !       check out double precision arithmetic vs. singe precision
@@ -278,7 +297,7 @@ Run the code and get the answer. Are you surprised?
 
 
 <font color="red">**Exercise:**  </font> <br>
-Look at the 3rd code in the tar-file, `precisionm.f90`, and either look at it first and try to figure out
+Look at the third code in the tar-file, `precisionm.f90`, and either look at it first and try to figure out
 what the code is supposed to do, then run it, or run it first and then look at the code
 
 Your course on Computational Physics should go into the representation of numbers on the computer in
@@ -333,8 +352,8 @@ precision, one is better than the other.
 
  
 <font color="red">**Exercise and Homework:**  </font> <br>
--- Understand how both codes implement the series algorithm.
--- Convince yourself as well as the TA why one is better than the other.
+- Understand how both codes implement the series algorithm.
+- Convince yourself as well as the TA why one is better than the other.
 
 ## Fortran Flags
 
