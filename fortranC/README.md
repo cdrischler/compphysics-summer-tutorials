@@ -75,7 +75,14 @@ Now, let us learn about
  - the Fortran language 
  - how to run a Fortran code once it is written
 
-Download the tar-file `simplef.tar` to a practice directory (e.g., `Fpractice`) in which you want to work with your Fortran codes.
+Download the tar-file `simplef.tar` to a practice directory (e.g., `Fpractice`) in which you want to work with your Fortran codes. For instance:
+```bash
+mkdir Fpractice && cd $_
+wget https://github.com/cdrischler/compphysics-summer-tutorials23/blob/main/fortranC/simplef.tar 
+```
+
+> **Tip**
+> If you have cloned the `git` repository, then you don't need to download the file. It's already in your folder tree.
 
 Unpack the file via
 ```shell
