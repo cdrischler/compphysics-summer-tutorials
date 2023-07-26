@@ -10,7 +10,6 @@ using namespace std;
 
 int main(){
     const int max = 20; 
-    int i, j, k, kwrite;
     double x[max];
     double down, min, step, sum, up, xx, start;
     
@@ -34,7 +33,7 @@ int main(){
         xx = x[k];
 
         sum = 1.0;
-        i = 0;
+        int i = 0;
         down = 1.0;
         up = 1.0;
 

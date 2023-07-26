@@ -413,7 +413,7 @@ Lines beginning with `#` are called directives. They are processed by the prepro
 using namespace std;
 ```
 This line imports the entire standard (`std`) namespace into the current namespace of the program, which is typically considered a bad practice because it pulls numerous type definitions into the current scope. Note that the `std` namespace is huge. On the other hand, good practice is to specify the namespace to which the identifier belongs using the scope operator (`::`) when a type is declared; e.g., `std::cout` and `std::endl`.
-```CPP
+```cpp
 int main() {...}
 ```
 `C++` programs begin with a `main()` function. The location does not matter but it has to be somewhere. It returns an integer (`int`). A function is a group of statements designed to perform a specific task. 
@@ -421,27 +421,35 @@ int main() {...}
 
 Opening braces `{` indicates the beginning of a block such as the `main` function or any other function, and the closing braces `}` indicates the ending. Code in between is refered to as the body of the `main` function.
 
-```CPP
+```c
 cout << "Hello World" << endl;  // print the string and ends the line
 ```
-This statement prints “Hello World” on the screen. Semi-colons `;` end every statement (i.e., line of code). `std::cout` is used to identify the standard character output device, usually the screen. The string after the operator `<<` is displayed on the output device, and ``<< endl`` ends the line, so that the next print statement will begin in the next line.
+This statement prints “Hello World” on the screen. Semi-colons `;` end every statement (i.e., end of the line of code). There may be more than one statement per line. `std::cout` is used to identify the standard character output device, usually the screen. The string after the operator `<<` is displayed on the output device, and ``<< endl`` ends the line, so that the next print statement will begin in the next line.
 
 The indentation is very helpful to keep source codes readable. But unlike Python indentation is not required.
 
 ```CPP
 return 0;
 ```
-This `return` statement ends the `main` function (or any other function). While in general this statement is used to return the "value" of the function (unless it's `void`), in this case `return` returns the status (successful or failed) of the program executation to the operating system.
+This `return` statement ends the `main` function (or any other function). While in general this statement is used to return the "value" of the function (unless it's `void`), in this case `return` returns the status (`0` if successful or `1` if failed) of the program executation to the operating system.
 
 
 ### Series summation revisted
 
-Note thate we also provide similar C files: `exp-good.cc` and `exp-bad.cc`. Feel free to explore these using `g++` instead of `gfortran`:
+Now, knowing the absolute basic in `C++`, let's revisit the series summations we studied in Fortran. We have corresponding source code written in C++: [exp-good.cpp](exp-good.cpp) and [exp-bad.cpp](exp-bad.cpp). You can compile them using  
 ```shell
-g++ exp-good.cpp -o cgood
-g++ exp-bad.cpp -o cbad
+g++ -O3 exp-good.cpp -o cgood
+g++ -03 exp-bad.cpp -o cbad
 ```
+where we have enabled optimization at compile time (`-O3`).
 
+**Exercise:**
+Compare the Fortran and `C++` source codes line by line. Try to understand similarities and dissimilarities (after all they compute the same exponential function). You may modify the code and compile to experiment. Don't be afraid of compile errors. Answer the following questions:
+* What is `cmath` and `iomanip` needed for?
+* What does the `const` keyword do? Why is it used? When could it be useful?
+* What is `double x[max]`?
+* What does `setw(20)` do?
+* Explain briefly how the data files are generated.
 
 ### Further reading
 

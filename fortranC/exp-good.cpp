@@ -9,7 +9,7 @@
 using namespace std;
 
 int main() {
-    const int max = 2000;
+    const int max = 20;
     double x[max];
     double element, min, step, sum, xx, start;
     int n, i;
