@@ -187,7 +187,7 @@ If you want your executables having specific names, compile with
 ```shell
 gfortran -o hello hello.f90
 ```
-where the executable is not called hello.  *Check it out!* 
+where the executable is now called hello.  *Check it out!* 
 
 The executable is executed by  the command 
 ```shell
@@ -263,7 +263,8 @@ small numbers.
       double precision :: y
 ```
 Real refers to a single precision number,  while double precision to a double precision number. The current preferred way is to specify this as `real(kind=dp)`.
-To be even more precise, one can guarantee precision to that of the machine-compiler-specific double precision real using the *kind* function to get the kind of `1.d0`: `integer, parameter :: dp = kind(1.d0)` and then specify `real (dp) :: something`.
+To be even more precise, one can guarantee precision to that of the machine-compiler-specific double precision real using the *kind* function to get the kind of `1.d0`: 
+`integer, parameter :: dp = kind(1.d0)` and then specify `real (dp) :: something`.
 ```
       integer :: i
 
@@ -298,10 +299,10 @@ what the code is supposed to do, then run it, or run it first and then look at t
 
 Your course on Computational Physics should go into the representation of numbers on the computer in
 more depth. You have to remember, that the most elementary units of the computer memory are the two
-*bits* (binary integers) `0` and `1`. This means that all numbers are stored in memory in *binary8 form,
+*bits* (binary integers) `0` and `1`. This means that all numbers are stored in memory in *binary* form,
 that is, as long strings of zeroes and ones. This would be awkward to look at for people. Consequently,
 binary strings are converted to *octal*, *decimal*, or *hexadecimal* numbers before results are
-communicated to people. While *octal* and *hexadecimal* are nice since the conversion does not loose
+communicated to people. While *octal* and *hexadecimal* are nice since their conversion does not loose
 precision, the for us most useful *decimal* numbers leads to a decrease in precision, unless the number
 is a power of 2. 
 
