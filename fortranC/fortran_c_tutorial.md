@@ -1,6 +1,6 @@
-# Tutorial on compiled languages: Fortran & C/C++
+# Tutorial on compiled languages: Fortran & C++
 
-**Author: Charlotte Elster**
+**Author: Charlotte Elster (Fortran) & Christian Drischler (C++)**
 
 ## What is Fortran?
 
@@ -168,14 +168,7 @@ The `*` means that the output is unformatted.
 ## Executing your first code
 
 Before you can execute or run your code, you must `compile` it, which means you must translate it into
-machine language. This is done with a `compiler`. There are different compilers on the market. We are
-using the `GNU` compiler `gfortran`, which is free and installed in your UNIX setup. 
-
-> **Tip**
-> If needed, you can install `gfortran` using:
-> ```shell
-> sudo apt-get install gcc
-> ```
+machine language. This is done with a `compiler`. There are different compilers on the market. We are using the `GNU` compiler `gfortran`, which is free and installed in your UNIX setup. 
 
 The simplest way to compile is with the command
 
@@ -216,7 +209,7 @@ gfortran -c hello.f
 ```
 The `-c` is called a flag for gfortran.  There will be more about flags later.
 
-## Simple Makefile for program hello.f
+## Simple Makefile for program `hello.f`
 
 Instead of typing the previous commands into a command line, one can execute a so-called `Makefile`. 
 A file called `Makefile` tells the `make` program package in a structured manner which source and object
@@ -353,13 +346,107 @@ There are two codes in the directory:
 
 Download both codes to your practice directory. Though both give you the same answer to the printed precision, one is better than the other.
 
-> **Tip**
-> Note thate we also provide similar C files: `exp-good.cc` and `exp-bad.cc`. Feel free to explore these using `g++` instead of `gfortran`:
-> ```shell
-> g++ exp-good.cc -o good
-> g++ exp-bad.cc -o bad
-> ```
-
 <font color="red">**Exercise and Homework:**  </font> <br>
 - Understand how both codes implement the series algorithm.
 - Convince yourself as well as the TA why one is better than the other.
+
+
+## C++ programming languages
+
+`C++` is very popular compiled pgramming language in both industry and academia. It is used to develop high-performance applications, operating systems, games, and many more.
+Having "C with classes" in mind, `C++` was developed by Bjarne Stroustrup as an extension of the `C` language. It gives a high level of control over system resources and memory.
+
+Why should you learn `C++` in 2023? Because it is:
+* one of the [most used and popular](https://www.tiobe.com/tiobe-index/) programming languages.
+* an object-oriented programming (OOP) language that, like any OOP language, gives a clear structure to programs and allows code to be reused.
+* similar in syntax to other languages such as `C` and `Java`.
+* And many more!
+
+> **Question**  
+> What is the most popular programming language according to the TIOBE index? 
+> Do you agree?   
+> Where is Fortran?  
+
+There are many powerful libraries for scientific computing. Some of the frequently used ones are:
+* [GNU Scientific Library (GSL)](https://www.gnu.org/software/gsl/): numerous mathematical routines such as random number generators, special functions and least-squares fitting
+* [Boost Libraries](https://www.boost.org/): provides free peer-reviewed portable C++ source libraries
+* [Cubature](https://github.com/stevengj/cubature): multi-dimensional adaptive integration (cubature) in C 
+* and many more!
+
+> **Question**  
+> How would you quickly implement Clebsch-Gordan coefficients in `C++`?
+
+
+### First C program
+
+Below is a simple `C` program to display "Hello World". 
+
+```CPP
+// Header file for input output functions
+#include <iostream>
+using namespace std;
+ 
+// Main() function: where the execution of program begins
+int main() {
+    cout << "Hello World" << endl;  // print the string and ends the line
+    return 0;
+}
+```
+Notice the semicola and curly braces! Just copy the code snippet to a new file, e.g., `HelloWorld.cpp` in your current folder. Let's compile and run it:
+```shell
+g++ -o helloworld HelloWorld.cpp
+./helloworld  # what output do you expect?
+```
+
+Let's break the simple code down, line by line:
+
+```CPP
+// Header file for input output functions
+```
+Comments are used to display additional information about the program. Any line beginning with `//` or blocks between `/*...*/` in `C++` is considered a comment. Comments will be ignored by compilers.
+
+```CPP
+#include <iostream>
+```
+Lines beginning with `#` are called directives. They are processed by the preprocessor during compilation. The `include` directive tells the preprocessor to include the content of the specified file in-place. In this case, the standard `iostream` file, containing declarations of all the standard input/output library functions. This line is needed to used `std::cout` and `std::endl` in the body of the `main` function (see below).
+```CPP
+using namespace std;
+```
+This line imports the entire standard (`std`) namespace into the current namespace of the program, which is typically considered a bad practice because it pulls numerous type definitions into the current scope. Note that the `std` namespace is huge. On the other hand, good practice is to specify the namespace to which the identifier belongs using the scope operator (`::`) when a type is declared; e.g., `std::cout` and `std::endl`.
+```CPP
+int main() {...}
+```
+`C++` programs begin with a `main()` function. The location does not matter but it has to be somewhere. It returns an integer (`int`). A function is a group of statements designed to perform a specific task. 
+
+
+Opening braces `{` indicates the beginning of a block such as the `main` function or any other function, and the closing braces `}` indicates the ending. Code in between is refered to as the body of the `main` function.
+
+```CPP
+cout << "Hello World" << endl;  // print the string and ends the line
+```
+This statement prints “Hello World” on the screen. Semi-colons `;` end every statement (i.e., line of code). `std::cout` is used to identify the standard character output device, usually the screen. The string after the operator `<<` is displayed on the output device, and ``<< endl`` ends the line, so that the next print statement will begin in the next line.
+
+The indentation is very helpful to keep source codes readable. But unlike Python indentation is not required.
+
+```CPP
+return 0;
+```
+This `return` statement ends the `main` function (or any other function). While in general this statement is used to return the "value" of the function (unless it's `void`), in this case `return` returns the status (successful or failed) of the program executation to the operating system.
+
+
+### Series summation revisted
+
+Note thate we also provide similar C files: `exp-good.cc` and `exp-bad.cc`. Feel free to explore these using `g++` instead of `gfortran`:
+```shell
+g++ exp-good.cpp -o cgood
+g++ exp-bad.cpp -o cbad
+```
+
+
+### Further reading
+
+The following resources will help you become more literate in C++ and C:
+* https://www.geeksforgeeks.org/cpp-tutorial/  
+* https://www.w3schools.com/cpp/  
+* https://www.tutorialspoint.com/cplusplus/index.htm  
+* https://www.geeksforgeeks.org/c-programming-language/?ref=lbp (tutorial on C)
