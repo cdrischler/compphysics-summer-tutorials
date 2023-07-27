@@ -1,8 +1,25 @@
-# Tutorial on compiled languages: Fortran & C++
+# Tutorial on compiled languages: Fortran & C++ <!-- omit from toc -->
 
 **Author: Charlotte Elster (Fortran) & Christian Drischler (C++)**
 
-## What is Fortran?
+**Table of contents**
+- [Fortran Programming Language](#fortran-programming-language)
+  - [What is Fortran?](#what-is-fortran)
+  - [Fortran was built around a performance-centric culture](#fortran-was-built-around-a-performance-centric-culture)
+  - [First Fortran Code](#first-fortran-code)
+  - [Executing your first code](#executing-your-first-code)
+  - [Simple Makefile for program `hello.f`](#simple-makefile-for-program-hellof)
+  - [Second Fortran code](#second-fortran-code)
+  - [First computational problem: Summing Series.](#first-computational-problem-summing-series)
+- [C++ programming language](#c-programming-language)
+  - [First C++ program](#first-c-program)
+  - [Series summation revisted](#series-summation-revisted)
+  - [Further reading](#further-reading)
+
+
+## Fortran Programming Language
+
+### What is Fortran?
 
 `Fortran`, short for `Formula Translator`, was the first widely used upper-level programming language
 and originated in the 1950s. Despite its age, it remains a high-performance computing language
@@ -25,7 +42,7 @@ crunching data and doing math.
 
 Sure, there are challenges - but find me a language that does not have some challenges.
 
-## Fortran was built around a performance-centric culture
+### Fortran was built around a performance-centric culture
 
 For rather self-explanatory reasons, performance has been the top priority of the high-performance
 computing community.
@@ -69,7 +86,7 @@ Why do they still use Fortran?
 
 Fortran was designed for scientific computing. Sure, Fortran is old, but so is Unix, and C as well.
 
-## First Fortran Code
+### First Fortran Code
 
 Let's first install [GNU Fortran](https://gcc.gnu.org/fortran/). On Ubuntu, this can be done with the following command:
 ```shell
@@ -165,7 +182,7 @@ The `*` means that the output is unformatted.
  the command `stop` stops all execution, and `end` ends everything, in this case the program Hello.
  So me being sloppy does not matter.
 
-## Executing your first code
+### Executing your first code
 
 Before you can execute or run your code, you must `compile` it, which means you must translate it into
 machine language. This is done with a `compiler`. There are different compilers on the market. We are using the `GNU` compiler `gfortran`, which is free and installed in your UNIX setup. 
@@ -209,7 +226,7 @@ gfortran -c hello.f
 ```
 The `-c` is called a flag for gfortran.  There will be more about flags later.
 
-## Simple Makefile for program `hello.f`
+### Simple Makefile for program `hello.f`
 
 Instead of typing the previous commands into a command line, one can execute a so-called `Makefile`. 
 A file called `Makefile` tells the `make` program package in a structured manner which source and object
@@ -247,7 +264,7 @@ where the option `-f` points to the filename you give.
 With such a setup you can have several `makefiles` with different names for different codes. 
 You can also compile a bunch of codes with their own object files, which the last command then links together to create the executable.          
 
-## Second Fortran code 
+### Second Fortran code 
 
 With this code we want to check out numerical precision in computations, here specifically addition of
 small numbers.
@@ -306,7 +323,7 @@ communicated to people. While *octal* and *hexadecimal* are nice since their con
 precision, the for us most useful *decimal* numbers leads to a decrease in precision, unless the number
 is a power of 2. 
 
-## First computational problem: Summing Series.
+### First computational problem: Summing Series.
 
 A classic numerical problem is the summation of a series to evaluate a function. Let us consider
 the power series
