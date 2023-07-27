@@ -352,9 +352,9 @@ Download both codes to your practice directory. Though both give you the same an
 - Convince yourself as well as the TA why one is better than the other.
 
 
-## C++ programming languages
+## C++ programming language
 
-`C++` is very popular compiled pgramming language in both industry and academia. It is used to develop high-performance applications, operating systems, games, and many more.
+`C++` is a very popular compiled programming language in both industry and academia. It is used to develop high-performance applications, operating systems, games, and many more.
 Having "C with classes" in mind, `C++` was developed by Bjarne Stroustrup as an extension of the `C` language. It gives a high level of control over system resources and memory.
 
 Why should you learn `C++` in 2023? Because it is:
@@ -378,9 +378,9 @@ There are many powerful libraries for scientific computing. Some of the frequent
 > How would you quickly implement Clebsch-Gordan coefficients in `C++`?
 
 
-### First C program
+### First C++ program
 
-Below is a simple `C` program to display "Hello World". 
+Below is a simple `C++` program to display "Hello World". 
 
 ```CPP
 // Header file for input output functions
@@ -393,7 +393,7 @@ int main() {
     return 0;
 }
 ```
-Notice the semicola and curly braces! Just copy the code snippet to a new file, e.g., `HelloWorld.cpp` in your current folder. Let's compile and run it:
+Notice the semicolons and curly braces! Just copy the code snippet to a new file, e.g., `HelloWorld.cpp` in your current folder. Let's compile and run it:
 ```shell
 g++ -o helloworld HelloWorld.cpp
 ./helloworld  # what output do you expect?
@@ -417,7 +417,7 @@ This line imports the entire standard (`std`) namespace into the current namespa
 ```cpp
 int main() {...}
 ```
-`C++` programs begin with a `main()` function. The location does not matter but it has to be somewhere. It returns an integer (`int`). A function is a group of statements designed to perform a specific task. 
+`C++` programs begin with a `main()` function. Its location does not matter but it has to be somewhere. It returns an integer (`int`). A function is a group of statements designed to perform a specific task. 
 
 
 Opening braces `{` indicates the beginning of a block such as the `main` function or any other function, and the closing braces `}` indicates the ending. Code in between is refered to as the body of the `main` function.
@@ -427,7 +427,7 @@ cout << "Hello World" << endl;  // print the string and ends the line
 ```
 This statement prints “Hello World” on the screen. Semi-colons `;` end every statement (i.e., end of the line of code). There may be more than one statement per line. `std::cout` is used to identify the standard character output device, usually the screen. The string after the operator `<<` is displayed on the output device, and ``<< endl`` ends the line, so that the next print statement will begin in the next line.
 
-The indentation is very helpful to keep source codes readable. But unlike Python indentation is not required.
+Indentation is very helpful to keep source codes readable. But unlike Python, indentation is not required.
 
 ```CPP
 return 0;
@@ -442,10 +442,11 @@ Now, knowing the absolute basic in `C++`, let's revisit the series summations we
 g++ -O3 exp-good.cpp -o cgood
 g++ -03 exp-bad.cpp -o cbad
 ```
-where we have enabled optimization at compile time (`-O3`).
+where we have enabled optimization at compile time (`-O3`, it's an `O` as in
+Ohio).
 
 **Exercise:**
-Compare the Fortran and `C++` source codes line by line. Try to understand similarities and dissimilarities (after all they compute the same exponential function). You may modify the code and compile to experiment. Don't be afraid of compile errors. Answer the following questions:
+Compare the Fortran and corresponding `C++` source codes line by line. Try to understand similarities and dissimilarities (after all they compute the same exponential function). You may modify the code and compile to experiment. Don't be afraid of compile errors. Answer the following questions:
 * What is `cmath` and `iomanip` needed for?
 * What does the `const` keyword do? Why is it used? When could it be useful?
 * What is `double x[max]`?
