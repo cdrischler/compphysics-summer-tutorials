@@ -1,6 +1,6 @@
 # Tutorial on compiled languages: Fortran & C++ <!-- omit from toc -->
 
-**Author: Charlotte Elster (Fortran) & Christian Drischler (C++)**
+**Authors: Charlotte Elster (Fortran) & Christian Drischler (C++)**
 
 **Table of contents**
 - [Fortran Programming Language](#fortran-programming-language)
@@ -11,7 +11,7 @@
   - [Simple Makefile for program `hello.f`](#simple-makefile-for-program-hellof)
   - [Second Fortran code](#second-fortran-code)
   - [First computational problem: Summing Series.](#first-computational-problem-summing-series)
-- [C++ programming language](#c-programming-language)
+- [C++ Programming Language](#c-programming-language)
   - [First C++ program](#first-c-program)
   - [Series summation revisted](#series-summation-revisted)
   - [Further reading](#further-reading)
@@ -369,7 +369,7 @@ Download both codes to your practice directory. Though both give you the same an
 - Convince yourself as well as the TA why one is better than the other.
 
 
-## C++ programming language
+## C++ Programming Language
 
 `C++` is a very popular compiled programming language in both industry and academia. It is used to develop high-performance applications, operating systems, games, and many more.
 Having "C with classes" in mind, `C++` was developed by Bjarne Stroustrup as an extension of the `C` language. It gives a high level of control over system resources and memory.
@@ -477,3 +477,4 @@ The following resources will help you become more literate in C++ and C:
 * https://www.w3schools.com/cpp/  
 * https://www.tutorialspoint.com/cplusplus/index.htm  
 * https://www.geeksforgeeks.org/c-programming-language/?ref=lbp (tutorial on C)
+* [Computational Physics: Teach yourself C++](http://compphysics.github.io/ComputationalPhysics/doc/pub/learningcpp/html/learningcpp-bs.html) by Prof. Morten Hjorth-Jensen (excellent tutorial)
