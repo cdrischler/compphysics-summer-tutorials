@@ -61,7 +61,7 @@ sudo apt-get install build-essential gcc make perl dkms
 
 We will likely need the following selection of standard software, which can be conveniently downloaded using `apt`:
 ```shell
-sudo apt-get install git diffuse kompare gnuplot grace cmake
+sudo apt-get install git diffuse kompare gnuplot grace cmake gfortran
 sudo apt-get install texlive texmaker 
 sudo apt-get install python3 python3-pip
 sudo apt-get install synaptic
