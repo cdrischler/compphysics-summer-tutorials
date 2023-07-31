@@ -470,6 +470,10 @@ Compare the Fortran and corresponding `C++` source codes line by line. Try to un
 * What does `setw(20)` do?
 * Explain briefly how the data files are generated.
 
+> **Tip**
+> More on the comparison between codes written in Fortran, C++, and Python (and their performances can be found in the [supplemental material](language_comparison.ipynb).
+> 
+
 ### Further reading
 
 The following resources will help you become more literate in C++ and C:
