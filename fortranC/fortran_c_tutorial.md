@@ -61,7 +61,7 @@ Over the years, compiler theory and practice improved, and compilers got better 
 of code. Consequently, both in Fortran and in other languages, the focus has been shifting towards
 adding features that would enhance the programmer's productivity.
 
-As example, in 2014, 16 well known climate models were analyzed. They were all written in Fortran.
+For example, in 2014, 16 well-known climate models were analyzed. They were all written in Fortran.
 Why do they still use Fortran?
 
  - **Performance**: Fortran is fast, in cases faster than C, and e.g. climate modeling like much of
@@ -69,13 +69,13 @@ Why do they still use Fortran?
 
  - **Parallelism**: Performance necessitates parallelism, and Fortran implemented this long before other languages.
 
- - **Reuse**: Backward compatibility means that exisiting libraries can easily be reused.
+ - **Reuse**: Backward compatibility means that existing libraries can easily be reused.
 
  - **Arrays**: Fortran supports multi-dimensional arrays, slicing, reduction, reshaping, and many
-                 optimization for array based calculations like vectorization
+                 optimization for array-based calculations like vectorization
 
  - **Longevity**: Models in e.g. Climate science, Fluid Dynamics and similar should not be implemented
-                 in languageas that (i) are not backward compatible, and (ii) always change. If you
+                 in languages that (i) are not backward compatible and (ii) always change. If you
                  write a code in Fortran today, it is still likely to work in 20 years.
 
  - **Effort**: Can you imagine how much effort would be involved in re-engineering complex models?
@@ -97,7 +97,7 @@ Now, let us learn about
  - the Fortran language 
  - how to run a Fortran code once it is written
 
-Download the tar-file `simplef.tar` to a practice directory (e.g., `Fpractice`) in which you want to work with your Fortran codes. For instance:
+Download the `tar` file `simplef.tar` to a practice directory (e.g., `Fpractice`) where you want to work with your Fortran codes. For instance:
 ```bash
 mkdir Fpractice && cd $_
 wget https://github.com/cdrischler/compphysics-summer-tutorials23/raw/main/fortranC/simplef.tar 
@@ -115,11 +115,11 @@ Those are your first practice codes.
 
 *Remark on suffixes:* the suffix `.f90` is the accepted standard for all Fortran codes using the `free
 source form`. Though there are different Fortran standards, like `.f90`, `.f95`, `.f03`, `.f08` and so
-on, that indicate which ANSI-standard of Fortran version is used, the suffix `.f90` means that the
+on, that indicate which ANSI standard of the Fortran version is used, the suffix `.f90` means that the
 source code is in free format, not that the code conforms to the Fortran 90 standard. Code that uses the
 `.f90` suffix can use features from all Fortran standards. 
 
-All Fortran compilers recognize `.f90` as suffix indicating free source form, but some may not recognize
+All Fortran compilers recognize `.f90` as a suffix indicating free source form, but some may not recognize
 a suffix as `.f95`, `.f03`, or `.f18`. 
 
 Open `hello.f90` in your favorite editor.
@@ -127,9 +127,9 @@ Open `hello.f90` in your favorite editor.
 ```Fortran
       program Hello
 ```
-This is a main program and should have name - best the name for the file `hello.f90`
+This is a main program and should have a name - best the name for the file `hello.f90`
 
-A text comment in your code needs to start with `!` as first character. A good habit is to comment your code extensively (for yourself and others)   `.f90` uses free source form, which means you can start you code line wherever you like. My personal preference is still (like in `.f77`) to start at position 7, since this leads in my opinion to a more esthetic layout of the code and makes it easier to read
+A text comment in your code needs to start with `!` as the first character. A good habit is to comment your code extensively (for yourself and others)   `.f90` uses free source form, which means you can start you code line wherever you like. My personal preference is still (like in `.f77`) to start at position 7, since this leads in my opinion to a more esthetic layout of the code and makes it easier to read
 ```Fortran
 !       with good Fortran programming habits
 !
@@ -144,14 +144,14 @@ It is very useful to immediately detect while compiling if you e.g. mistyped a v
 !       default input and output
       integer ::  kread=5, kwrite=6
 ```
- Variables must be declared at the beginning of your code. Fortran has as basic variables `real`, `complex`, `logical`, and `character`.
+ Variables must be declared at the beginning of your code. Fortran has basic variables `real`, `complex`, `logical`, and `character`.
 ```Fortran
 !       default input and output
 !      data kread/5/, kwrite/6/
 ```
 There are **two** default units associated with executing a Fortran code:
-5 for reading input (from file or screen), 6 for writing to a file or screen.
-I put 2 different ways into the code how to assign variables.  
+5 for reading input (from a file or screen), 6 for writing to a file or screen.
+I put 2 different ways into the code of how to assign variables.  
 ```Fortran
 !        
 !        talk to the computer
@@ -179,15 +179,15 @@ The `*` means that the output is unformatted.
 ```
  
  I was a bit sloppy with the ending. You could write `end program Hello`
- the command `stop` stops all execution, and `end` ends everything, in this case the program Hello.
+ the command `stop` stops all execution, and `end` ends everything, in this case, the program Hello.
  So me being sloppy does not matter.
 
 ### Executing your first code
 
 Before you can execute or run your code, you must `compile` it, which means you must translate it into
-machine language. This is done with a `compiler`. There are different compilers on the market. We are using the `GNU` compiler `gfortran`, which is free and installed in your UNIX setup. 
+machine language. This is done with a `compiler`. There are different compilers on the market. We use the `GNU` compiler `gfortran`, which is free and installed in your UNIX setup. 
 
-The simplest way to compile is with the command
+The simplest way to compile it is with the command
 
 ```shell
 gfortran hello.f90
@@ -199,7 +199,7 @@ This is the *executable* which your computer can run.
 **However**, gfortran used this way will always create a file `a.out`. What if you want to have two executables
 in one directory? 
 It is better to name the executable with some recognizable name.
-If you want your executables having specific names, compile with
+If you want your executables to have specific names, compile with
 
 ```shell
 gfortran -o hello hello.f90
@@ -216,8 +216,8 @@ The executable is executed by  the command
 * Modify the code so that it calculates the average of three numbers.
 
 **Remark:**  The command `gfortran` executes two separate tasks:
--- The first is translating your Fortran code into machine languages, and a file `hello.o`, the object file is created
--- The second is to link machine libraries from you computer to create the executable.
+-- The first is translating your Fortran code into machine language, and a file `hello.o`, the object file is created
+-- The second is to link machine libraries from your computer to create the executable.
 
 If you only want to compile, e.g. to see if you have syntax errors in your code, you can do this with
 the command 
@@ -261,25 +261,25 @@ make -f make.hello
 ```
 where the option `-f` points to the filename you give. 
 
-With such a setup you can have several `makefiles` with different names for different codes. 
+With such a setup, you can have several `makefiles` with different names for different codes. 
 You can also compile a bunch of codes with their own object files, which the last command then links together to create the executable.          
 
 ### Second Fortran code 
 
-With this code we want to check out numerical precision in computations, here specifically addition of
+With this code, we want to check out numerical precision in computations, here specifically the addition of
 small numbers.
 
 ```Fortran
       program precision 
 !
-!       check out double precision arithmetic vs. singe precision
+!       check out double precision arithmetic vs. single precision
 !
       implicit none
 
       real :: x
       double precision :: y
 ```
-Real refers to a single precision number,  while double precision to a double precision number. The current preferred way is to specify this as `real(kind=dp)`.
+Real refers to a single-precision number,  while double precision refers to a double-precision number. The current preferred way is to specify this as `real(kind=dp)`.
 To be even more precise, one can guarantee precision to that of the machine-compiler-specific double precision real using the *kind* function to get the kind of `1.d0`: 
 `integer, parameter :: dp = kind(1.d0)` and then specify `real (dp) :: something`.
 ```
@@ -426,18 +426,18 @@ Comments are used to display additional information about the program. Any line 
 ```CPP
 #include <iostream>
 ```
-Lines beginning with `#` are called directives. They are processed by the preprocessor during compilation. The `include` directive tells the preprocessor to include the content of the specified file in-place. In this case, the standard `iostream` file, containing declarations of all the standard input/output library functions. This line is needed to used `std::cout` and `std::endl` in the body of the `main` function (see below).
+Lines beginning with `#` are called directives. They are processed by the preprocessor during compilation. The `include` directive tells the preprocessor to include the content of the specified file in place. In this case, the standard `iostream` file, contains declarations of all the standard input/output library functions. This line is needed to use `std::cout` and `std::endl` in the body of the `main` function (see below).
 ```CPP
 using namespace std;
 ```
-This line imports the entire standard (`std`) namespace into the current namespace of the program, which is typically considered a bad practice because it pulls numerous type definitions into the current scope. Note that the `std` namespace is huge. On the other hand, good practice is to specify the namespace to which the identifier belongs using the scope operator (`::`) when a type is declared; e.g., `std::cout` and `std::endl`.
+This line imports the entire standard (`std`) namespace into the current namespace of the program, which is typically considered bad practice because it pulls numerous type definitions into the current scope. Note that the `std` namespace is huge. On the other hand, a good practice is to specify the namespace to which the identifier belongs using the scope operator (`::`) when a type is declared; e.g., `std::cout` and `std::endl`.
 ```cpp
 int main() {...}
 ```
 `C++` programs begin with a `main()` function. Its location does not matter but it has to be somewhere. It returns an integer (`int`). A function is a group of statements designed to perform a specific task. 
 
 
-Opening braces `{` indicates the beginning of a block such as the `main` function or any other function, and the closing braces `}` indicates the ending. Code in between is refered to as the body of the `main` function.
+Opening braces `{` indicates the beginning of a block such as the `main` function or any other function, and the closing braces `}` indicates the ending. The code in between is referred to as the body of the `main` function.
 
 ```c
 cout << "Hello World" << endl;  // print the string and ends the line
@@ -449,7 +449,7 @@ Indentation is very helpful to keep source codes readable. But unlike Python, in
 ```CPP
 return 0;
 ```
-This `return` statement ends the `main` function (or any other function). While in general this statement is used to return the "value" of the function (unless it's `void`), in this case `return` returns the status (`0` if successful or `1` if failed) of the program executation to the operating system.
+This `return` statement ends the `main` function (or any other function). While in general this statement is used to return the "value" of the function (unless it's `void`), in this case, `return` returns the status (`0` if successful or `1` if failed) of the program execution to the operating system.
 
 
 ### Series summation revisted
