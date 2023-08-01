@@ -100,7 +100,7 @@ Now, let us learn about
 Download the tar-file `simplef.tar` to a practice directory (e.g., `Fpractice`) in which you want to work with your Fortran codes. For instance:
 ```bash
 mkdir Fpractice && cd $_
-wget https://github.com/cdrischler/compphysics-summer-tutorials23/blob/main/fortranC/simplef.tar 
+wget https://github.com/cdrischler/compphysics-summer-tutorials23/raw/main/fortranC/simplef.tar 
 ```
 
 > **Tip**
