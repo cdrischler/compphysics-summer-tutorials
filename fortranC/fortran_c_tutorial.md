@@ -222,7 +222,7 @@ The executable is executed by  the command
 If you only want to compile, e.g. to see if you have syntax errors in your code, you can do this with
 the command 
 ```shell
-gfortran -c hello.f
+gfortran -c hello.f90
 ```
 The `-c` is called a flag for gfortran.  There will be more about flags later.
 
