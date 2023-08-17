@@ -46,7 +46,9 @@ Follow these steps to set up the environment on your lab computer:
 > **Note**
 > Using our customized hard drive (instead of installing Ubuntu yourself) is highly recommended. The hard drive can be used with VirtualBox on any computer, including your personal computer.
 
-Alternatively, follow these steps to install Ubuntu in VirtualBox yourself:
+## Alternative: Installing Ubuntu Linux from scratch
+
+Alternatively, follow these steps to install Ubuntu in VirtualBox from scratch:
 * Download and install [VirtualBox](https://www.virtualbox.org/).
 * Download [Ubuntu 22.04.2 LTS](https://ubuntu.com/download/desktop).
 * In VirtualBox, click `New` and follow the instructions to install Ubuntu using the downloaded image file. This may take a while.
