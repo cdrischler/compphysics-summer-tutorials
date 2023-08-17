@@ -41,14 +41,14 @@ git config --global core.autocrlf input
 git config --global core.autocrlf true
 ```
 
-If you open a file created on another system and do not have this config option set, Git will think you made changes to the file based on the way your system handles this type of file.
+If you open a file created on another system and do not have this config option set, Git will think you made changes to the file based on how your system handles this type of file.
 
 `autocrlf` stands for auto carriage return line feed.
   
-Follow [these steps]() to sign up on <GitHub.com> for a free account.
+Follow [these steps](https://github.com/join) to sign up on GitHub for a free account.
 
 > **Note**
-> Signing up on <Github.com> is free of charge. Use your Bobcat email address to enable educational features.
+> Signing up for a GitHub account is free of charge. Use your Bobcat email address to enable educational features.
 
 
 ## Let's get started
