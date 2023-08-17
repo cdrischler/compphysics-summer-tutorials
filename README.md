@@ -1,6 +1,6 @@
 # Computational Physics Summer Tutorials 2023
 
-To help students prepare for the fall semester course *Computer Simulation Methods in Physics (PHYS 4071/5071)* at Ohio University, we offer one-hour tutorials this year, consisting of lectures and hands-on learning activities, in the Computer Lab in Clippiner Lab. 
+To help students prepare for the fall semester course *Computer Simulation Methods in Physics (PHYS 4071/5071)* at Ohio University, we offer one-hour tutorials this year, consisting of lectures and hands-on learning activities, in the Computer Lab in Clippinger Lab. 
 
 Attending these tutorials is _highly_ recommended (and in your interest) but not mandatory. Contact the instructors (see below) if you cannot participate in the tutorials. 
 
