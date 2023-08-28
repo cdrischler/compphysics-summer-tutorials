@@ -1,12 +1,11 @@
 # Computational Physics Summer Tutorials 2023
 
-To help students prepare for the fall semester course *Computer Simulation Methods in Physics (PHYS 4071/5071)* at Ohio University, we offer one-hour tutorials this year, consisting of lectures and hands-on learning activities, in the Computer Lab in Clippinger Lab. 
+To help students prepare for the fall semester course *Computer Simulation Methods in Physics* (PHYS 4071/5071) at Ohio University, we offer this year one-hour tutorials twice a week, consisting of lectures and hands-on learning activities, in the Computer Lab in Clippinger Lab. Everyone interested is welcome, too.
 
 Attending these tutorials is _highly_ recommended (and in your interest) but not mandatory. Contact the instructors (see below) if you cannot participate in the tutorials. 
 
 > **Warning**
 > We no longer require first-year graduate students to sign up for a C-course in the CS department or complete an intro to Python module in [Coursera](https://www.coursera.org/).
-
 
 The following tutorials will be offered this year:
 
@@ -14,7 +13,7 @@ The following tutorials will be offered this year:
 | ----------- | ----------- | ----------- |
 | [Basic UNIX](unix_tutorial.ipynb)   |   RN     | 7/18 @ **2:45 pm** & 7/20 @ **3 pm** | 
 | [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)  | KC       | 7/25 & 7/27 @ 3 pm | 
-| [Basic Fortran & C++](fortranC/fortran_c_tutorial.md) | CH & KC & CD       | 8/1 & 8/3 @ 3 pm | 
+| [Basic Fortran & C++](fortranC/fortran_c_tutorial.md) | CH & CD & KC       | 8/1 & 8/3 @ 3 pm | 
 | [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb) | RN        | 8/8 & 8/10 @ 3 pm | 
 | [Basic Git](git-github/README.md)   | CD        | 8/15 & 8/17 @ 3 pm | 
 
@@ -46,7 +45,9 @@ Follow these steps to set up the environment on your lab computer:
 > **Note**
 > Using our customized hard drive (instead of installing Ubuntu yourself) is highly recommended. The hard drive can be used with VirtualBox on any computer, including your personal computer.
 
-Alternatively, follow these steps to install Ubuntu in VirtualBox yourself:
+## Alternative: Install Ubuntu Linux from scratch
+
+Alternatively, follow these steps to install Ubuntu in VirtualBox from scratch:
 * Download and install [VirtualBox](https://www.virtualbox.org/).
 * Download [Ubuntu 22.04.2 LTS](https://ubuntu.com/download/desktop).
 * In VirtualBox, click `New` and follow the instructions to install Ubuntu using the downloaded image file. This may take a while.
@@ -84,11 +85,13 @@ sudo snap install pycharm-community --classic
 These are topics we might cover in future summer tutorials:
 * BLAS and GSL
 * make/cmake
+* data analysis and basic machine learning
 * Texmaker
-* debuggers and profilers (gdb, gprof, profiling, etc.)
+* debuggers and profilers (gdb, gprof, profiling, unit testing etc.)
 * emacs
 * diffuse/kompare
 * valgrind
 * openMP/MPI
+* GSL
 * PyCharm/CLion/DataSpell (all from JetBrains) and Microsoft VS Code
 * Feel free to add!
