@@ -5,3 +5,9 @@ good
 bad
 cgood
 cbad
+**/.DS_Store
+fortranC/cexp_func
+fortranC/cexp_func.so
+fortranC/fexp_func.cpython-311-darwin.so
+fortranC/cexp_func.cpp
+fortranC/fexp_func.f90
