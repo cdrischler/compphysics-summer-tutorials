@@ -1,8 +1,8 @@
-# Computational Physics Summer Tutorials 2023
+# Computational Physics Summer Tutorials 2024
 
-To help students prepare for the fall semester course *Computer Simulation Methods in Physics* (PHYS 4071/5071) at Ohio University, we offer this year one-hour tutorials twice a week, consisting of lectures and hands-on learning activities, in the Computer Lab in Clippinger Lab. Everyone interested is welcome, too.
+To help students prepare for the fall semester course Computer Simulation Methods in Physics (PHYS 4071/5071) at Ohio University, we are offering this year one-hour tutorials twice a week in the Computer Lab in Clippinger Lab. These tutorials consist of lectures and hands-on learning activities.
 
-Attending these tutorials is _highly_ recommended (and in your interest) but not mandatory. Contact the instructors (see below) if you cannot participate in the tutorials. 
+Attending these tutorials is _highly_ recommended (and in your interest) but not mandatory. However, you will need to register. Contact the instructors (see below) if you cannot participate in the tutorials. 
 
 > **Warning**
 > We no longer require first-year graduate students to sign up for a C-course in the CS department or complete an intro to Python module in [Coursera](https://www.coursera.org/).
@@ -11,20 +11,16 @@ The following tutorials will be offered this year:
 
 | Tutorial      | Tutor | Dates | 
 | ----------- | ----------- | ----------- |
-| [Basic UNIX](unix_tutorial.ipynb)   |   RN     | 7/18 @ **2:45 pm** & 7/20 @ **3 pm** | 
-| [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)  | KC       | 7/25 & 7/27 @ 3 pm | 
-| [Basic Fortran & C++](fortranC/fortran_c_tutorial.md) | CH & CD & KC       | 8/1 & 8/3 @ 3 pm | 
-| [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb) | RN        | 8/8 & 8/10 @ 3 pm | 
+| [Basic UNIX](unix_tutorial.ipynb)   |   RN     | 5/16 @ **2:45 pm** & 5/18 @ **3 pm** | 
+| [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)  | KC       | 5/21 & 5/23 @ 3 pm | 
+| [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb) | RN        | 5/28 & 5/30 @ 3 pm | 
+|    |        |  | 
 | [Basic Git](git-github/README.md)   | CD        | 8/15 & 8/17 @ 3 pm | 
 
 Feel free to suggest topics for future summer tutorials.
 
 **Instructors** for these tutorials are (in alphabetical order):
-* [Christian Drischler](https://www.ohio.edu/cas/drischler) (CD)
-* [Charlotte Elster](https://www.ohio.edu/cas/elster) (CE)
-
-**Teaching assistants** for these tutorials are (in alphabetical order):
-* [Kanishk Chauhan](https://www.ohio.edu/cas/kc303218) (KC) 
+* [Christian Drischler](https://www.ohio.edu/cas/drischler) (CD, lead instructor)
 * [Rawan Nowier](https://www.ohio.edu/cas/rn757120) (RN)
 
 
