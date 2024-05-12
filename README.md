@@ -25,11 +25,11 @@ The following tutorials will be offered this year:
 
 | Tutorial       | Dates | 
 | ----------- | ----------- |
-| [Basic UNIX](unix_tutorial.ipynb)        | 5/16 @ **2:45 pm** & 5/18 @ **3 pm** | 
+| [Basic UNIX](unix_tutorial.ipynb)        | 5/14 @ **2:45 pm** & 5/16 @ **3 pm** | 
 | [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)         | 5/21 & 5/23 @ 3 pm | 
 | [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb)        | 5/28 & 5/30 @ 3 pm | 
 | (no tutorials)   |      | 
-| [Basic Git](git-github/README.md)          | 8/15 & 8/17 @ 3 pm | 
+| [Basic Git](git-github/README.md)          | 6/11 & 6/13 @ 3 pm | 
 
 Feel free to suggest topics for future summer tutorials.
 
@@ -42,7 +42,7 @@ We are grateful to Charlotte Elster and Kanishk Chauhan for fruitful discussions
 
 ## More tutorials
 
-In addition the tutorials we will teach in the summer, you might want to check out the selection of tutorials below, some of which are external links.
+In addition, the tutorials we will teach in the summer, you might want to check out the selection of tutorials below, some of which are external links.
 
 ### C/C++
 * [GNU Scientific Library (GSL)](gsl.ipynb)
