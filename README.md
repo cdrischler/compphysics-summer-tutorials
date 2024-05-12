@@ -21,7 +21,7 @@ You will need to register to attend this course. Overall participation and the f
 > **Warning**
 > We no longer require first-year graduate students to sign up for a C-course in the CS department or complete an intro to Python module in [Coursera](https://www.coursera.org/).
 
-The following tutorials will be offered this year:
+The following tutorials (Tuesdays and Thursdays) will be offered this year:
 
 | Tutorial       | Dates | 
 | ----------- | ----------- |
