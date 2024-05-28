@@ -3,11 +3,12 @@
 ## Table of contents <!-- omit from toc -->
 
 - [Overview](#overview)
-- [More tutorials](#more-tutorials)
+- [More tutorials (optional)](#more-tutorials-optional)
   - [C/C++](#cc)
   - [Python](#python)
   - [Jupyter and Markdown](#jupyter-and-markdown)
-  - [GNU Debugger (optional)](#gnu-debugger-optional)
+  - [GNU Debugger](#gnu-debugger)
+  - [Misc](#misc)
 - [Setting up the software environment](#setting-up-the-software-environment)
 - [Optional: Install Ubuntu Linux from scratch](#optional-install-ubuntu-linux-from-scratch)
 
@@ -40,7 +41,7 @@ Feel free to suggest topics for future summer tutorials.
 We are grateful to Charlotte Elster and Kanishk Chauhan for fruitful discussions and lecture material from the 2023 Summer Tutorials.
 
 
-## More tutorials
+## More tutorials (optional)
 
 In addition, the tutorials we will teach in the summer, you might want to check out the selection of tutorials below, some of which are external links.
 
@@ -72,9 +73,13 @@ python3 -m pip install jupyter  # need to run only once
 jupyter-notebook &
 ```
 
-### GNU Debugger (optional)
+### GNU Debugger 
 * [GDB manual](https://www.asc.ohio-state.edu/physics/ntg/6810/handouts/gdb_debugger.pdf)
 * [Debugging tutorial](https://heather.cs.ucdavis.edu/~matloff/debug.html)
+
+
+### Misc
+* [Journals](journals.md)
 
 
 ## Setting up the software environment
