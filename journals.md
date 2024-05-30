@@ -8,6 +8,7 @@ Welcome to this mini-tutorial (about 45 min) on navigating scientific journal re
 * know how to cite journal articles effectively in LaTeX
 * know about common tools to collect and organize scientific references 
 
+This tutorial was given by Christian Drischler (OU) for the 2024 Summer tutorial series for INPP undergraduate students (May 30), organized by [Cody Parker](https://www.ohio.edu/cas/parkerc1) and [Andrea Richard](https://www.ohio.edu/cas/richarda1).
 
 ## Scientific journals
 
@@ -44,6 +45,8 @@ More pedagogical review articles, e.g., can be found in:
   * **Students at all levels** who want to gain a thorough understanding of a topic
   * [An example](https://www.annualreviews.org/content/journals/10.1146/annurev-nucl-102014-022027). [Another example](https://www.annualreviews.org/content/journals/10.1146/annurev-nucl-102419-041903)
 
+(Journal descriptions were copied from the journals' websites.)
+
 Many of these website provide helpful tools, such as **exporting citations in the BibTeX format** [e.g., see "Export Citation" [here](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.226503)] and setting up email alerts. Many of them also suggest a citation style for properly citing the resources.
 
 
@@ -70,7 +73,11 @@ Below are several websites where you can search databases across journals (and m
 [Ohio University library](https://www.ohio.edu/library/) has a rich history of creating tailored and dedicated services, unique collections and diverse innovative spaces. With our strong connections to students, faculty, staff and the community, we are a leader and innovator in enabling our users’ success in teaching, learning and research. 
 * Our membership in [OhioLINK](http://catalog.ohiolink.edu/iii/encore/) provides students, staff and faculty easy access to materials from 91 other academic libraries in the state of Ohio. Materials from libraries around the world are also readily available through Interlibrary Loan.
 * [Electronic Theses & Dissertations ETD Center](https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/1?clear=0,1,5,10,20,21,1001) is a free, online database of Ohio's undergraduate, masters and doctoral theses and dissertations from participating OhioLINK member schools. It contains the abstract for all included theses and dissertations. The full-text is also available if it was submitted. [An example](https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/10?p10_accession_num=ohiou1519055652016583&clear=10&session=106262423663924).
+* See also [Resources for Faculty and Students in Physics and Astronomy](https://libguides.library.ohio.edu/physics) to get started.   
+* The subject librarian for the Department of Physics & Astronomy (and others) is [Andrew Stuart](https://www.ohio.edu/library/about/staff/stuarta).
+* [Scopus](https://www.scopus.com/home.uri) is a database to search the scientific literature to find articles in a wide range of areas, such as quantum mechanics, nuclear physics, and classical physics. It also includes tools to track, analyze, and visualize your research.
    
+(Descriptions were copied from the corresponding websites.)
 
 ## Reference management software
 

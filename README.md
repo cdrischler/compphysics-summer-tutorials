@@ -79,7 +79,7 @@ jupyter-notebook &
 
 
 ### Misc
-* [Journals](journals.md)
+* [Navigating scientific journals](journals.md)
 
 
 ## Setting up the software environment
