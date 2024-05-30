@@ -2,8 +2,14 @@
 
 navigate journal resources such as arXiv, Google Scholar, the Ohio University library, etc.
 
-[inspireheb](https://inspirehep.net/)
-[arXiv](https://arxiv.org/)
+[inspirehep](https://inspirehep.net/) (check out the [bibliography generator](https://inspirehep.net/bibliography-generator))   
+[arXiv](https://arxiv.org/). 
+
+[Zotero](https://www.zotero.org/)  
+[Mendeley](https://www.mendeley.com)   
+[JabRef](https://www.jabref.org/)  
+[Ohio University library](https://www.ohio.edu/library/).  
+[ Electronic Theses & Dissertations Center](https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/1?clear=0,1,5,10,20,21,1001)   
 
 PRC, PRL, NIMA, NIMB, and RSI, PRD, Journal of Physics G, Nuclear Physics A, Progress in Particle and Nuclear Physics
 
