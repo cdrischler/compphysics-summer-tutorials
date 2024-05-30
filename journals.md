@@ -4,7 +4,7 @@ Welcome to this mini-tutorial (about 45 min) on navigating scientific journal re
 * know how to search for (and find!) scientific articles accurately
 * know the difference between pre-prints and published articles
 * be familiar with important scientific journals in nuclear physics
-* know how to access non-open-access journal articles through ressources provided by Ohio University
+* know how to access non-open-access journal articles through resources provided by Ohio University
 * know how to cite journal articles effectively in LaTeX
 * know about common tools to collect and organize scientific references 
 
@@ -14,7 +14,7 @@ This tutorial was given by Christian Drischler (OU) for the 2024 Summer tutorial
 
 _What are common scientific journals I should know about?_ 
 
-The answer to this questions depends on your specific scientific research interests and needs. [Journal Citation Reports (JCR)](https://en.wikipedia.org/wiki/Journal_Citation_Reports) and journal metrics, such as the [Impact Factor](https://en.wikipedia.org/wiki/Impact_factor), might help be helpful (but also misleading at times). For instance, [here](https://journals.aps.org/metrics) are the metrics for the APS journals.
+The answer to this question depends on your specific scientific research interests and needs. [Journal Citation Reports (JCR)](https://en.wikipedia.org/wiki/Journal_Citation_Reports) and journal metrics, such as the [Impact Factor](https://en.wikipedia.org/wiki/Impact_factor), might help be helpful (but also misleading at times). For instance, [here](https://journals.aps.org/metrics) are the metrics for the APS journals.
 
 Below is an _incomplete_ list of popular ([peer-reviewed](https://en.wikipedia.org/wiki/Peer_review)) journals. (Note that not all articles and/or journals are open-access.)
 
@@ -32,6 +32,7 @@ Below is an _incomplete_ list of popular ([peer-reviewed](https://en.wikipedia.o
 * [Journal of Physics G: Nuclear and Particle Physics](https://iopscience.iop.org/journal/0954-3899) publishes theoretical, experimental and computational research in nuclear and particle physics including all interface areas between these fields. The journal also publishes articles on nuclear and particle astrophysics.
 * [Nuclear Physics A](https://www.sciencedirect.com/journal/nuclear-physics-a) focuses on the domain of nuclear and hadronic physics and includes the following subsections: Nuclear Structure and Dynamics; Intermediate and High Energy Heavy Ion Physics; Hadronic Physics; Electromagnetic and Weak Interactions; Nuclear Astrophysics
 * [Physics Letters B](https://www.sciencedirect.com/journal/physics-letters-b)  ensures the rapid publication of important new results in particle physics, nuclear physics and cosmology. Specialized editors are responsible for contributions in experimental nuclear physics, theoretical nuclear physics, experimental high-energy physics, theoretical high-energy physics, astrophysics, astroparticle physics and cosmology.
+* [Reviews of Modern Physics (RMP)](https://journals.aps.org/rmp/) (see review journals below).
 
 (Journal descriptions were copied from the journals' websites.)
 
@@ -44,13 +45,15 @@ More pedagogical review articles, e.g., can be found in:
   * Researchers who want an introduction to new fields, with a view to developing an interface between different areas of research;
   * **Students at all levels** who want to gain a thorough understanding of a topic
   * [An example](https://www.annualreviews.org/content/journals/10.1146/annurev-nucl-102014-022027). [Another example](https://www.annualreviews.org/content/journals/10.1146/annurev-nucl-102419-041903)
+* [Reviews of Modern Physics (RMP)](https://journals.aps.org/rmp/) brings the broad fundamental physics literature in established topical areas together and places it within the context of current trends in research and applications. Its in-depth review articles and shorter Colloquia serve students, engineers, and physics researchers in a range of fields. [APS Journal]
+  * [An example](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.88.021001) 
 
 (Journal descriptions were copied from the journals' websites.)
 
 Many of these website provide helpful tools, such as **exporting citations in the BibTeX format** [e.g., see "Export Citation" [here](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.226503)] and setting up email alerts. Many of them also suggest a citation style for properly citing the resources.
 
 
-## Researching scientifc journals
+## Researching scientific journals
 
 _There are so many journals - how do I find the specific article I'm looking for?_
 
@@ -60,7 +63,7 @@ Below are several websites where you can search databases across journals (and m
 
 **Tip: arXiv allows for downloading the source files, including LaTeX files (if used) and high-resolution figures, e.g., for your talks!** You can find the download link on the right-hand side - give it a try [here](https://arxiv.org/abs/2010.15696).
 
-**Another tip: arXiv provides [lists of new submissions](https://arxiv.org/list/nucl-th/new) to keep you informed at all times.**
+**Another tip: arXiv provides [lists of new and recent submissions](https://arxiv.org/) on its homepage to keep you informed at all times. For instance, [here](https://arxiv.org/list/nucl-th/new) you can find the list of new physics submissions.**
 
 [inspirehep](https://inspirehep.net/): community hub that helps researchers to share and find accurate scholarly information in high energy physics [Don't worry if you are working in low-energy physics!]  
 * [How to search for papers on INSPIRE?](https://help.inspirehep.net/knowledge-base/inspire-paper-search-obsolete/)
@@ -93,7 +96,7 @@ While there is no general answer to this question, here is an _incomplete_ list 
 
 (Software descriptions were copied from the developers' websites.)
 
-Feel free to explore different reference managers and choose the one that best suits your needs and interests.
+Feel free to explore different reference managers and choose the one that best suits your needs and interests. See also [here](https://libguides.mit.edu/c.php?g=695148&p=4928673) for more information.
 
 
 ## Accessing published articles
@@ -113,7 +116,7 @@ For Ohio Link, create the bookmark with the location:
 javascript:void(location.href=%22http://proxy.ohiolink.edu:9099/login?url=%22+location.href);  
 ```
 
-Notice that these minimalistic `javascript`s append the proxy link to the current url in your browser. This could also be done manually. 
+Notice that these minimalistic `javascript`s append the proxy link to the current URL in your browser. This could also be done manually. 
 
 **Now, let's access restricted journal articles:**
 
@@ -128,7 +131,7 @@ When on the journal page for a specific article, click the bookmark:
 
 _I have more questions - who can I ask?_
 
-Feel free to contact me if you have any questions! Also you might want to discuss this subject with your advisor(s).
+Feel free to contact me if you have any questions! Also, you might want to discuss this subject with your advisor(s).
 
 Christian Drischler   
 <drischler@ohio.edu>   
@@ -136,4 +139,3 @@ Department of Physics and Astronomy
 Clippinger Laboratories 265   
 Ohio University   
 Athens, OH 45701
-
