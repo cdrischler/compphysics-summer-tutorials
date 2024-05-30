@@ -55,7 +55,7 @@ Below are several websites where you can search databases across journals (and m
 
 [arXiv](https://arxiv.org/) is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. **Materials on this site are not peer-reviewed by arXiv.** [arXiv is a very popular [**pre-print**](https://en.wikipedia.org/wiki/Preprint) archive.] 
 
-**Tip: arXiv allows for downloading the source files, including LaTeX files (if used) and high-resolution figures, e.g., for your talks!** You can find the download link on the right-hand side - give it a try [here](https://arxiv.org/abs/2106.09090).
+**Tip: arXiv allows for downloading the source files, including LaTeX files (if used) and high-resolution figures, e.g., for your talks!** You can find the download link on the right-hand side - give it a try [here](https://arxiv.org/abs/2010.15696).
 
 **Another tip: arXiv provides [lists of new submissions](https://arxiv.org/list/nucl-th/new) to keep you informed at all times.**
 
@@ -78,9 +78,9 @@ _How do I get my scientific references organized, structured, and accessible?_
 
 While there is no general answer to this question, here is an _incomplete_ list of [software](https://en.wikipedia.org/wiki/Reference_management_software) for exactly this task. You might find one or multiple useful in your workflow:
 
-[Zotero](https://www.zotero.org/) is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research. 
+[Zotero](https://www.zotero.org/) is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research.     
 [Mendeley](https://www.mendeley.com) is used to manage and share research papers and to generate bibliographies for scholarly articles  
-[JabRef](https://www.jabref.org/) is a free reference manager that helps you to discover, collect, organize and cite your scholarly literature and research in an efficient way.  
+[JabRef](https://www.jabref.org/) is a free reference manager that helps you to discover, collect, organize and cite your scholarly literature and research in an efficient way.   
 [EndNote](https://endnote.com/) is a commercial reference management software package, used to manage bibliographies and references when writing essays, reports and articles.   
 [And many more](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).
 
@@ -106,7 +106,7 @@ For Ohio Link, create the bookmark with the location:
 javascript:void(location.href=%22http://proxy.ohiolink.edu:9099/login?url=%22+location.href);  
 ```
 
-Notice that these minimalistic `javascipt`s append the proxy link to the current url in your browser. This could also be done manually. 
+Notice that these minimalistic `javascript`s append the proxy link to the current url in your browser. This could also be done manually. 
 
 **Now, let's access restricted journal articles:**
 
@@ -115,6 +115,7 @@ When on the journal page for a specific article, click the bookmark:
 * For the OU proxy link, you are re-routed to authenticate and then re-routed back to the journal page, but now with access (if OU has a subscription). 
 * For OhioLink, you are re-routed to Ohio Link to select “Ohio University” and then an authentication page. Then, you are automatically rerouted back to the journal page, now with access (assuming there is a subscription through OhioLink).
 
+**Tip: If an article (or any other item such as books) you need is not available,  you can request it through [Interlibrary Loan](https://www.ohio.edu/library/services/borrowing/interlibrary-loan) provided by University Libraries.**
 
 ## Questions?
 
@@ -123,8 +124,9 @@ _I have more questions - who can I ask?_
 Feel free to contact me if you have any questions! Also you might want to discuss this subject with your advisor(s).
 
 Christian Drischler   
+<drischler@ohio.edu>   
 Department of Physics and Astronomy   
-Lindley Hall S219   
+Clippinger Laboratories 265   
 Ohio University   
 Athens, OH 45701
 
