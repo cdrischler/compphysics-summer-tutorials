@@ -15,7 +15,7 @@
 
 ## Overview
 
-To help students prepare for the fall semester course Computer Simulation Methods in Physics (PHYS 4071/5071) at Ohio University, we are offering this year one-hour tutorials twice a week in the Computer Lab in Clippinger Lab. These tutorials consist of lectures, hands-on learning activities, and a final project.
+To help students prepare for the fall semester course Computer Simulation Methods in Physics (PHYS 4071/5071) at Ohio University, we are offering this year one-hour tutorials twice a week in the Computer Lab in Clippinger Lab (PHYS 6900 102 Special Topics in Physics). These tutorials consist of lectures, hands-on learning activities, and a final project.
 
 You will need to register to attend this course. Overall participation and the final project will be used to grade the participants upon completion of the project. Working in small groups is _highly_ encouraged. Contact the instructors (see below) if you cannot participate in the tutorials. 
 
