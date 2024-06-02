@@ -23,9 +23,9 @@ This tutorial was given by Christian Drischler (OU) for the 2024 Summer tutorial
 
 __What are common scientific journals I should know about?__
 
-The answer to this question depends on your specific scientific research interests and needs. [Journal Citation Reports (JCR)](https://en.wikipedia.org/wiki/Journal_Citation_Reports) and journal metrics, such as the [Impact Factor](https://en.wikipedia.org/wiki/Impact_factor), might help be helpful (but also misleading at times). For instance, [here](https://journals.aps.org/metrics) are the metrics for the APS journals.
+The answer to this question depends on your specific scientific research interests and needs. [Journal Citation Reports (JCR)](https://en.wikipedia.org/wiki/Journal_Citation_Reports) and journal metrics, such as the [Impact Factor](https://en.wikipedia.org/wiki/Impact_factor), might be helpful (but also misleading at times). For instance, [here](https://journals.aps.org/metrics) are the metrics for the APS journals.
 
-Below is an _incomplete_ list of popular ([peer-reviewed](https://en.wikipedia.org/wiki/Peer_review)) journals. (Note that not all articles and/or journals are open-access.)
+Below is an _incomplete_ list of popular ([peer-reviewed](https://en.wikipedia.org/wiki/Peer_review)) journals in nuclear physics. (Note that not all articles and/or journals are open-access.)
 
 * [American Physical Society (APS) journals](https://journals.aps.org/about), including 
     - **Physical Review C (PRC)** publishes leading research in all areas of experimental and theoretical nuclear physics. 
@@ -80,9 +80,9 @@ Below are several websites where you can search databases across journals (and m
 * [Search tips for using INSPIRE](https://help.inspirehep.net/knowledge-base/inspire-paper-search/)
 * [bibliography generator](https://inspirehep.net/bibliography-generator)
 
-[Google Scholar](https://scholar.google.com/) provides a simple way to broadly search for scholarly literature. From one place, you can search across many disciplines and sources: articles, theses, books, abstracts and court opinions, from academic publishers, professional societies, online repositories, universities and other web sites. Google Scholar helps you find relevant work across the world of scholarly research. 
+[Google Scholar](https://scholar.google.com/) provides a simple way to broadly search for scholarly literature. From one place, you can search across many disciplines and sources: articles, theses, books, abstracts and court opinions, from academic publishers, professional societies, online repositories, universities and other websites. Google Scholar helps you find relevant work across the world of scholarly research. 
 
-[Ohio University library](https://www.ohio.edu/library/) has a rich history of creating tailored and dedicated services, unique collections and diverse innovative spaces. With our strong connections to students, faculty, staff and the community, we are a leader and innovator in enabling our users’ success in teaching, learning and research. 
+[Ohio University Library](https://www.ohio.edu/library/) has a rich history of creating tailored and dedicated services, unique collections and diverse innovative spaces. With our strong connections to students, faculty, staff and the community, we are a leader and innovator in enabling our users’ success in teaching, learning and research. 
 * Our membership in [OhioLINK](http://catalog.ohiolink.edu/iii/encore/) provides students, staff and faculty easy access to materials from 91 other academic libraries in the state of Ohio. Materials from libraries around the world are also readily available through Interlibrary Loan.
 * [Electronic Theses & Dissertations ETD Center](https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/1?clear=0,1,5,10,20,21,1001) is a free, online database of Ohio's undergraduate, masters and doctoral theses and dissertations from participating OhioLINK member schools. It contains the abstract for all included theses and dissertations. The full-text is also available if it was submitted. [An example](https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/10?p10_accession_num=ohiou1519055652016583&clear=10&session=106262423663924).
 * See also [Resources for Faculty and Students in Physics and Astronomy](https://libguides.library.ohio.edu/physics) to get started.   
