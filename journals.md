@@ -1,4 +1,4 @@
-# Navigating scientific journals
+# Navigating scientific journals  <!-- omit from toc -->
 
 Welcome to this mini-tutorial (about 45 min) on navigating scientific journal resources, such as [arXiv](https://arxiv.org/), [Google Scholar](https://scholar.google.com/), and [Ohio University library](https://www.ohio.edu/library/) for [INPP](https://inpp.ohio.edu/~inpp/) undergraduate students. The **learning goals** are:
 * know how to search for (and find!) scientific articles accurately
@@ -10,9 +10,18 @@ Welcome to this mini-tutorial (about 45 min) on navigating scientific journal re
 
 This tutorial was given by Christian Drischler (OU) for the 2024 Summer tutorial series for INPP undergraduate students (May 30), organized by [Cody Parker](https://www.ohio.edu/cas/parkerc1) and [Andrea Richard](https://www.ohio.edu/cas/richarda1).
 
+### Table of contents  <!-- omit from toc -->
+
+- [Scientific journals](#scientific-journals)
+- [Researching scientific journals](#researching-scientific-journals)
+- [Reference management software](#reference-management-software)
+- [Accessing published articles](#accessing-published-articles)
+- [Questions?](#questions)
+
+
 ## Scientific journals
 
-_What are common scientific journals I should know about?_ 
+__What are common scientific journals I should know about?__
 
 The answer to this question depends on your specific scientific research interests and needs. [Journal Citation Reports (JCR)](https://en.wikipedia.org/wiki/Journal_Citation_Reports) and journal metrics, such as the [Impact Factor](https://en.wikipedia.org/wiki/Impact_factor), might help be helpful (but also misleading at times). For instance, [here](https://journals.aps.org/metrics) are the metrics for the APS journals.
 
@@ -55,7 +64,7 @@ Many of these website provide helpful tools, such as **exporting citations in th
 
 ## Researching scientific journals
 
-_There are so many journals - how do I find the specific article I'm looking for?_
+__There are so many journals - how do I find the specific article I'm looking for?__
 
 Below are several websites where you can search databases across journals (and much more). They are very helpful tools in your daily research:
 
@@ -84,7 +93,7 @@ Below are several websites where you can search databases across journals (and m
 
 ## Reference management software
 
-_How do I get my scientific references organized, structured, and accessible?_
+__How do I get my scientific references organized, structured, and accessible?__
 
 While there is no general answer to this question, here is an _incomplete_ list of [software](https://en.wikipedia.org/wiki/Reference_management_software) for exactly this task. You might find one or multiple useful in your workflow:
 
@@ -101,7 +110,7 @@ Feel free to explore different reference managers and choose the one that best s
 
 ## Accessing published articles
 
-_How do I access published articles for which access is typically restricted?_
+__How do I access published articles for which access is typically restricted?__
 
 Ohio University provides resources to access scientific articles published in a wide range of journals. Using a proxy link is a common and straightforward way to do so.
 
@@ -129,7 +138,7 @@ When on the journal page for a specific article, click the bookmark:
 
 ## Questions?
 
-_I have more questions - who can I ask?_
+__I have more questions - who can I ask?__
 
 Feel free to contact me if you have any questions. You might also want to discuss this subject with your advisor(s).
 
