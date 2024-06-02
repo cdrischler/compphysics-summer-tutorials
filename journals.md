@@ -26,7 +26,7 @@ Below is an _incomplete_ list of popular ([peer-reviewed](https://en.wikipedia.o
     - **Physical Review X (PRX)** is an online-only, fully open access, peer-reviewed journal that aims to publish, as timely as possible, exceptional original research papers from all areas of pure, applied, and interdisciplinary physics.
 * [Nature](https://www.nature.com/) is a weekly international journal publishing the finest **peer-reviewed research in all fields of science** and technology on the basis of its originality, importance, interdisciplinary interest, timeliness, accessibility, elegance and surprising conclusions. Nature also provides rapid, authoritative, insightful and arresting news and interpretation of topical and coming trends affecting science, scientists and the wider public. [It's interesting to read the [journal metrics](https://www.nature.com/nature-portfolio/about/journal-metrics).]
 * [Science](https://www.science.org/) has been at the center of important scientific discovery since its founding in 1880—with seed money from Thomas Edison. Today, Science continues to publish the very best in research across the sciences, with articles that consistently rank among the most cited in the world.
-* [Nuclear Instruments and Methods in Physics Research - section A (NIM-A)](https://www.sciencedirect.com/journal/nuclear-instruments-and-methods-in-physics-research-section-a-accelerators-spectrometers-detectors-and-associated-equipment) publishes papers on design, development and performance of scientific instruments including complex detector systems and large scale facilities which utilize or study ionizing radiation. This scope includes the development of particle accelerators, particle beam sources, beam transport systems and target arrangements as well as the use of secondary phenomena and their enabling instruments such as neutron sources, synchrotron radiation sources and free electron lasers. It also includes all types of instrumentation for the detection and spectrometry of radiations from high energy processes and nuclear decays, as well as innovative instrumentation for nuclear reactors, nuclear security, nuclear medical diagnoses and therapy, astrophysics, planetary science, and environmental protection. 
+* [Nuclear Instruments and Methods in Physics Research Section A (NIM-A): Accelerators, Spectrometers, Detectors and Associated Equipment](https://www.sciencedirect.com/journal/nuclear-instruments-and-methods-in-physics-research-section-a-accelerators-spectrometers-detectors-and-associated-equipment) publishes papers on design, development and performance of scientific instruments including complex detector systems and large scale facilities which utilize or study ionizing radiation. This scope includes the development of particle accelerators, particle beam sources, beam transport systems and target arrangements as well as the use of secondary phenomena and their enabling instruments such as neutron sources, synchrotron radiation sources and free electron lasers. It also includes all types of instrumentation for the detection and spectrometry of radiations from high energy processes and nuclear decays, as well as innovative instrumentation for nuclear reactors, nuclear security, nuclear medical diagnoses and therapy, astrophysics, planetary science, and environmental protection. 
 * [Nuclear Instruments and Methods in Physics Research Section B (NIM-B): Beam Interactions with Materials and Atoms](https://www.sciencedirect.com/journal/nuclear-instruments-and-methods-in-physics-research-section-b-beam-interactions-with-materials-and-atoms) accepts original manuscripts on the fundamental interactions between energetic particle beams and matter, along with related technologies and applications. 
 * [Review of Scientific Instruments (RSI)](https://pubs.aip.org/aip/rsi) publishes novel advancements in scientific instrumentation, apparatuses, techniques of experimental measurement, and related mathematical analysis. Its content includes publication of regular articles, review articles, perspectives, and tutorials on instruments and techniques of experimental measurement covering all areas of science, including physics, chemistry, and biology. Special Topics may also be published on new developments or on recently held workshops or conferences in instrumentation., 
 * [Journal of Physics G: Nuclear and Particle Physics](https://iopscience.iop.org/journal/0954-3899) publishes theoretical, experimental and computational research in nuclear and particle physics including all interface areas between these fields. The journal also publishes articles on nuclear and particle astrophysics.
@@ -36,7 +36,7 @@ Below is an _incomplete_ list of popular ([peer-reviewed](https://en.wikipedia.o
 
 (Journal descriptions were copied from the journals' websites.)
 
-More pedagogical review articles, e.g., can be found in:
+More pedagogical review articles can be found, e.g., in:
 
 * [Progress in Particle and Nuclear Physics](https://www.sciencedirect.com/journal/progress-in-particle-and-nuclear-physics): aims to discuss new developments in the field at a **level suitable for the general nuclear and particle physicist** and, in greater technical depth, to explore the most important advances in these areas. 
   * [An example](https://www.sciencedirect.com/science/article/abs/pii/S0146641023000613?via%3Dihub) 
@@ -61,7 +61,7 @@ Below are several websites where you can search databases across journals (and m
 
 [arXiv](https://arxiv.org/) is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. **Materials on this site are not peer-reviewed by arXiv.** [arXiv is a very popular [**pre-print**](https://en.wikipedia.org/wiki/Preprint) archive.] 
 
-**Tip: arXiv allows for downloading the source files, including LaTeX files (if used) and high-resolution figures, e.g., for your talks!** You can find the download link on the right-hand side - give it a try [here](https://arxiv.org/abs/2010.15696).
+**Tip: arXiv allows you to download the source files, including LaTeX files (if used) and high-resolution figures, e.g., for your talks!** You can find the download link on the right-hand side—give it a try [here](https://arxiv.org/abs/2010.15696).
 
 **Another tip: arXiv provides [lists of new and recent submissions](https://arxiv.org/) on its homepage to keep you informed at all times. For instance, [here](https://arxiv.org/list/nucl-th/new) you can find the list of new physics submissions.**
 
@@ -88,11 +88,11 @@ _How do I get my scientific references organized, structured, and accessible?_
 
 While there is no general answer to this question, here is an _incomplete_ list of [software](https://en.wikipedia.org/wiki/Reference_management_software) for exactly this task. You might find one or multiple useful in your workflow:
 
-[Zotero](https://www.zotero.org/) is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research.     
-[Mendeley](https://www.mendeley.com) is used to manage and share research papers and to generate bibliographies for scholarly articles  
-[JabRef](https://www.jabref.org/) is a free reference manager that helps you to discover, collect, organize and cite your scholarly literature and research in an efficient way.   
-[EndNote](https://endnote.com/) is a commercial reference management software package, used to manage bibliographies and references when writing essays, reports and articles.   
-[And many more](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).
+* [Zotero](https://www.zotero.org/) is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research.     
+* [Mendeley](https://www.mendeley.com) is used to manage and share research papers and to generate bibliographies for scholarly articles  
+* [JabRef](https://www.jabref.org/) is a free reference manager that helps you to discover, collect, organize and cite your scholarly literature and research in an efficient way.   
+* [EndNote](https://endnote.com/) is a commercial reference management software package, used to manage bibliographies and references when writing essays, reports and articles.   
+* [And many more](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).
 
 (Software descriptions were copied from the developers' websites.)
 
@@ -131,7 +131,7 @@ When on the journal page for a specific article, click the bookmark:
 
 _I have more questions - who can I ask?_
 
-Feel free to contact me if you have any questions! Also, you might want to discuss this subject with your advisor(s).
+Feel free to contact me if you have any questions. You might also want to discuss this subject with your advisor(s).
 
 Christian Drischler   
 <drischler@ohio.edu>   
