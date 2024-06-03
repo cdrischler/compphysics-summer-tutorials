@@ -5,13 +5,14 @@
 **Expected learning outcome**:
 
 - [x] Set up Git on your computer for software development
-- [x] Sign up for a free [GitHub](https://github.com/) account (necessary for the Computational Physics lecture)
+- [x] Sign up for a free [GitHub](https://github.com/) account (necessary for the Computational Physics lecture). You can even get GitHub Pro for free [through Ohio University](https://help.ohio.edu/TDClient/30/Portal/KB/ArticleDet?ID=499). Just follow the link and the instructions.  
 - [x] Familiarize yourself with the rich literature on Git available online
 - [x] Understand the Git workflow and implement it using the basic set of Git commands
 - [x] Get directions for more advanced applications of Git in your research activities 
 
 > **Note**
 > Make sure you have signed up on GitHub (free account!), as you will need it to participate in the lectures and hand in your homework assignments. Use your Ohio U email address.
+
 
 ## Initial setup
 
