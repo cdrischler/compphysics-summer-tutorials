@@ -30,7 +30,7 @@ The following tutorials (Tuesdays and Thursdays) will be offered this year:
 | [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)         | 5/21 & 5/23 @ 3 pm | 
 | [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb)        | 5/28 & 5/30 @ 3 pm | 
 | [Basic Git](git-github/README.md)          | 6/4 & 6/6 @ 3 pm | 
-| [Mini-project](final_project/final_project.ipynb)           | 6/11 & 6/13 @ 3 pm | 
+| [Final project](final_project/final_project.ipynb)           | 6/11 & 6/13 @ 3 pm | 
 
 Feel free to suggest topics for future summer tutorials.
 
