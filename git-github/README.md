@@ -51,6 +51,43 @@ Follow [these steps](https://github.com/join) to sign up on GitHub for a free ac
 > **Note**
 > Signing up for a GitHub account is free of charge. Use your Bobcat email address to enable educational features.
 
+### SSH key authentication
+
+Next, we need to set up SSH keys to give you easy access to your GitHub account (without entering your login credentials all the time).
+
+* Open `Terminal` in your virtual machine.
+* Paste the text below, substituting in your GitHub email address:
+```shell
+ssh-keygen -t ed25519 -C "your_email@example.com"  # use here the email address you use for GitHub!
+```
+* We will not use a passphrase, so just hit `enter` without any other keyboard input.
+* Start the ssh-agent in the background.
+```shell
+eval "$(ssh-agent -s)"
+# e.g., Agent pid 59566
+```
+* Add your SSH private key to the ssh-agent.
+```shell
+ssh-add ~/.ssh/id_ed25519
+```
+* Copy the SSH public key to your clipboard like so:
+```shell
+cat ~/.ssh/id_ed25519.pub
+# Then select and copy the contents of the id_ed25519.pub file
+# displayed in the terminal to your clipboard
+```
+* Add the SSH public key to your account on GitHub. 
+* In the upper-right corner of any GitHub page, click your profile photo, then click `Settings`.
+* In the `Access` section of the sidebar, click `SSH and GPG keys`.
+* In the `Title` field, add a descriptive label for the new key. We recommend `VirtualBox: Computer Lab`.
+* Select the type of key to be `authentication`
+* In the `Key` field, paste your public key and click `Add SSH key`. (For security reasons, you will receive an email notification that an SSH key was added to your account.)
+* If prompted, confirm access to your account on GitHub.
+
+If that did not work and/or for more information, see the following GitHub tutorials:
+1. [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)
+2. [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
 
 ## Let's get started
 
