@@ -1,5 +1,8 @@
 # Computational Physics Summer Tutorials 2024 <!-- omit from toc -->
 
+> [!NOTE]
+> **Student evaluation of teaching (course evaluation) surveys are now open for students for your course.** Please take a moment to participate in the evaluation process. Students have received a reminder email with a subject line “You have been invited to provide feedback for your courses”. Thank you! 
+
 ## Table of contents <!-- omit from toc -->
 
 - [Overview](#overview)
