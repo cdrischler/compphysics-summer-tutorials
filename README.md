@@ -1,7 +1,4 @@
-# Computational Physics Summer Tutorials 2024 <!-- omit from toc -->
-
-> [!NOTE]
-> **Student evaluation of teaching (course evaluation) surveys are now open for students for your course.** Please take a moment to participate in the evaluation process. Students have received a reminder email with a subject line “You have been invited to provide feedback for your courses”. Thank you! 
+# Computational Physics Summer Tutorials 2025 <!-- omit from toc -->
 
 ## Table of contents <!-- omit from toc -->
 
@@ -18,22 +15,19 @@
 
 ## Overview
 
-To help students prepare for the fall semester course Computer Simulation Methods in Physics (PHYS 4071/5071) at Ohio University, we are offering this year one-hour tutorials twice a week in the Computer Lab in Clippinger Lab (PHYS 6900 102 Special Topics in Physics). These tutorials consist of lectures, hands-on learning activities, and a final project.
+Welcome to the Computational Physics Summer Tutorials 2025. This five-week course will cover the basics of scientific software development, including the Python programming language. It was previously held in the summers of 2023 and 2024. While everyone is welcome to attend all or selected sessions, it also helps students prepare for the fall semester course "Computer Simulation Methods in Physics" (PHYS 4071/5071) at Ohio University. This year, we are offering one-hour tutorials twice a week in the Computer Lab in Clippinger Lab (PHYS 6900 102 Special Topics in Physics). These tutorials consist of lectures, hands-on learning activities, and a final project.
 
-You will need to register to attend this course. Overall participation and the final project will be used to grade the participants upon completion of the project. Working in small groups is _highly_ encouraged. Contact the instructors (see below) if you cannot participate in the tutorials. 
-
-> **Warning**
-> We no longer require first-year graduate students to sign up for a C-course in the CS department or complete an intro to Python module in [Coursera](https://www.coursera.org/).
+Please register if you want to attend this course. Upon completion of the final project, the participants' overall participation and the final project will be used to grade them. Working in small groups is highly encouraged. Contact the instructors (see below) if you cannot participate in the tutorials. 
 
 The following tutorials (Tuesdays and Thursdays) will be offered this year:
 
 | Tutorial       | Dates | 
 | ----------- | ----------- |
-| [Basic UNIX](unix_tutorial.ipynb)        | 5/14 @ **2:45 pm** & 5/16 @ **3 pm** | 
-| [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)         | 5/21 & 5/23 @ 3 pm | 
-| [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb)        | 5/28 & 5/30 @ 3 pm | 
-| [Basic Git](git-github/README.md)          | 6/4 & 6/6 @ 3 pm | 
-| [Final project](final_project/final_project.ipynb)           | 6/11 & 6/13 @ 3 pm | 
+| [Basic UNIX](unix_tutorial.ipynb)        | 5/13 @ **2:45 pm** & 5/15 @ **3 pm** | 
+| [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)         | 5/20 & 5/22 @ 3 pm | 
+| [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb)        | 5/27 & 5/29 @ 3 pm | 
+| [Basic Git](git-github/README.md)          | 6/3 & 6/5 @ 3 pm | 
+| [Final project](final_project/final_project.ipynb)           | 6/10 & 6/11 @ 3 pm | 
 
 Feel free to suggest topics for future summer tutorials.
 
