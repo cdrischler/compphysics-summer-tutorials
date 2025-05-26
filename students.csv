@@ -1,0 +1,11 @@
+First_Name,Age,Department,Score,Join_Year,Passed,Expected_Graduation
+Alice,25,Physics,88.5,2022,True,2027
+Bob,30,Math,92.0,2021,True,2026
+Charlie,35,Biology,79.5,2020,False,2025
+Diana,28,Chemistry,85.0,2023,True,2028
+Ethan,22,Math,91.2,2022,True,2027
+Fay,40,Physics,76.5,2020,False,2025
+George,29,Biology,89.0,2021,True,2026
+Hannah,31,Chemistry,84.3,2022,True,2027
+Ian,24,Physics,95.0,2023,True,2028
+Julia,27,Math,87.6,2021,True,2026
