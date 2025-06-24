@@ -15,7 +15,9 @@
 
 ## Overview
 
-Welcome to the Computational Physics Summer Tutorials 2025. This five-week course will cover the basics of scientific software development, including the Python programming language. It was previously held in the summers of 2023 and 2024. While everyone is welcome to attend all or selected sessions, it also helps students prepare for the fall semester course "Computer Simulation Methods in Physics" (PHYS 4071/5071) at Ohio University. This year, we are offering one-hour tutorials twice a week in the Computer Lab in Clippinger Lab (PHYS 6900 102 Special Topics in Physics). These tutorials consist of lectures, hands-on learning activities, and a final project.
+Welcome to the Computational Physics Summer Tutorials 2025. This five-week course will cover the basics of scientific software development, including the Python programming language. 
+
+It was previously held in the summers of 2023 and 2024. While everyone is welcome to attend all or selected sessions, it also helps students prepare for the fall semester course "Computer Simulation Methods in Physics" (PHYS 4071/5071) at Ohio University. This year, we are offering one-hour tutorials twice a week in the Computer Lab in Clippinger Lab (PHYS 6900 102 Special Topics in Physics). These tutorials consist of lectures, hands-on learning activities, and a final project.
 
 Please register if you want to attend this course. Upon completion of the final project, the participants' overall participation and the final project will be used to grade them. Working in small groups is highly encouraged. Contact the instructors (see below) if you cannot participate in the tutorials. 
 
@@ -26,7 +28,7 @@ The following tutorials (Tuesdays and Thursdays) will be offered this year:
 | [Basic UNIX](unix_tutorial.ipynb)        | 7/8 @ **2:45 pm** & 7/10 @ **3 pm** | 
 | [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)         | 7/15 & 7/17 @ 3 pm | 
 | [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb)        | 7/22 & 7/24 @ 3 pm | 
-| [Basic Git](git-github/README.md)          | 7/29 & 7/31 @ 3 pm | 
+| [Basic Git/GitHub](git-github/README.md)          | 7/29 & 7/31 @ 3 pm | 
 | [Final project](final_project/final_project.ipynb)           | 8/5 & 8/7 @ 3 pm | 
 
 Feel free to suggest topics for future summer tutorials.
