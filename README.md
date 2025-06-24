@@ -23,20 +23,20 @@ The following tutorials (Tuesdays and Thursdays) will be offered this year:
 
 | Tutorial       | Dates | 
 | ----------- | ----------- |
-| [Basic UNIX](unix_tutorial.ipynb)        | ?/13 @ **2:45 pm** & ?/15 @ **3 pm** | 
-| [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)         | ?/20 & ?/22 @ 3 pm | 
-| [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb)        | ?/27 & ?/29 @ 3 pm | 
-| [Basic Git](git-github/README.md)          | ?/3 & ?/5 @ 3 pm | 
-| [Final project](final_project/final_project.ipynb)           | ?/10 & ?/11 @ 3 pm | 
+| [Basic UNIX](unix_tutorial.ipynb)        | 7/8 @ **2:45 pm** & 7/10 @ **3 pm** | 
+| [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)         | 7/15 & 7/17 @ 3 pm | 
+| [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb)        | 7/22 & 7/24 @ 3 pm | 
+| [Basic Git](git-github/README.md)          | 7/29 & 7/31 @ 3 pm | 
+| [Final project](final_project/final_project.ipynb)           | 8/5 & 8/7 @ 3 pm | 
 
 Feel free to suggest topics for future summer tutorials.
 
 **Instructors** for these tutorials are (in alphabetical order):
-* [Christian Drischler](https://www.ohio.edu/cas/drischler) (CD, lead instructor)
+* [Chase Cartwright](https://www.ohio.edu/cas/cc627122)(CC)
+* [Christian Drischler](https://www.ohio.edu/cas/drischler) (CD)
 * [Rawan Nowier](https://www.ohio.edu/cas/rn757120) (RN)
 
 We are grateful to Charlotte Elster and Kanishk Chauhan for fruitful discussions and lecture material from the 2023 Summer Tutorials.
-
 
 ## More tutorials (optional)
 
