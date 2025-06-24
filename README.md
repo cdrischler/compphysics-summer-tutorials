@@ -17,7 +17,7 @@
 
 Welcome to the 2025 Computational Physics Summer Tutorials! This five-week course will cover the basics of scientific computing, including the Python programming language. 
 
-The tutorials were previously held in the summers of 2023 and 2024. While everyone is welcome to attend all or selected sessions, it also helps students prepare for the fall semester course "Computer Simulation Methods in Physics" (PHYS 4071/5071) at Ohio University. This year, we are offering one-hour tutorials twice a week in the Computer Lab in Clippinger Lab (PHYS 6900 102 Special Topics in Physics). These tutorials consist of lectures, hands-on learning activities, and a final project.
+While everyone is welcome to attend all or selected sessions, it also helps students prepare for the fall semester course "Computer Simulation Methods in Physics" (PHYS 4071/5071) at Ohio University. This year, we are offering one-hour tutorials twice a week in the Computer Lab in Clippinger Lab (PHYS 6900 102 Special Topics in Physics). These tutorials consist of lectures, hands-on learning activities, and a final project.
 
 Please register if you want to attend this course. Upon completion of the final project, the participants' overall participation and the final project will be used to grade them. Working in small groups is highly encouraged. Contact the instructors (see below) if you cannot participate in the tutorials. 
 
@@ -38,6 +38,7 @@ Feel free to suggest topics for future summer tutorials.
 * [Christian Drischler](https://www.ohio.edu/cas/drischler) (CD)
 * [Rawan Nowier](https://www.ohio.edu/cas/rn757120) (RN)
 
+The tutorials were previously held in the summers of 2023 and 2024. 
 We are grateful to Charlotte Elster and Kanishk Chauhan for their fruitful discussions and for providing lecture material from the 2023 Summer Tutorials.
 
 ## More tutorials (optional)
