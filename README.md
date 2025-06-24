@@ -34,11 +34,11 @@ The following tutorials (Tuesdays and Thursdays) will be offered this year:
 Feel free to suggest topics for future summer tutorials.
 
 **Instructors** for these tutorials are (in alphabetical order):
-* [Chase Cartwright](https://www.ohio.edu/cas/cc627122)(CC)
+* [Chase Cartwright](https://www.ohio.edu/cas/cc627122) (CC)
 * [Christian Drischler](https://www.ohio.edu/cas/drischler) (CD)
 * [Rawan Nowier](https://www.ohio.edu/cas/rn757120) (RN)
 
-We are grateful to Charlotte Elster and Kanishk Chauhan for fruitful discussions and lecture material from the 2023 Summer Tutorials.
+We are grateful to Charlotte Elster and Kanishk Chauhan for their fruitful discussions and for providing lecture material from the 2023 Summer Tutorials.
 
 ## More tutorials (optional)
 
