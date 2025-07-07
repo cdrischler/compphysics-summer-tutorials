@@ -90,11 +90,12 @@ We use VirtualBox to virtualize Ubuntu Linux on your host computer, which can ru
 > You don't need to follow these steps on the computers in the Computer Lab. Just start up your virtual machine in VirtualBox that you created in the first lecture week.
 
 Follow these steps to set up our customized environment with pre-installed software on your lab computer:
-* Download and install [VirtualBox](https://www.virtualbox.org/).
-* Download our [customized VirtualBox hard drive](https://catmailohio-my.sharepoint.com/:u:/g/personal/drischler_ohio_edu/EYlLoSurm6tMq-rGL-Je98IBXPSi9yRtjmuERZPfB9j8Mg?e=bFu9oU), which contains pre-installed Ubuntu Linux and other software. You will need an Ohio U account to access the hard drive. 
+* Download and install [VirtualBox](https://www.virtualbox.org/). On Lab computers, this step can be skipped.
+* Retrieve our customized virtual hard drive (ask the instructors), which contains pre-installed Ubuntu Linux and other software.
 * In VirtualBox, navigate to `File-Import Appliance` in the menu and import the downloaded file (e.g., `/Users/student/ubuntu-compphys.ova`).
+* Disable the USB controller in the settings of your new virtual machine in VirtualBox.
 * Start the virtual machine.
-* The default user name _and_ password is `student`. It makes sense to change the password.
+* The default user name _and_ password is `student`.
 
 > **Note**
 > Using our customized hard drive (instead of installing Ubuntu yourself) is highly recommended. The hard drive can be used with VirtualBox on any computer, including your personal computer.
