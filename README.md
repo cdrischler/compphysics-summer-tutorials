@@ -93,7 +93,7 @@ Follow these steps to set up our customized environment with pre-installed softw
 * Download and install [VirtualBox](https://www.virtualbox.org/). On Lab computers, this step can be skipped.
 * Retrieve our customized virtual hard drive (ask the instructors), which contains pre-installed Ubuntu Linux and other software.
 * In VirtualBox, navigate to `File-Import Appliance` in the menu and import the downloaded file (e.g., `/Users/student/ubuntu-compphys.ova`).
-* Disable the USB controller in the settings of your new virtual machine in VirtualBox.
+* Disable the USB controller in the [settings of your new virtual machine](https://i.sstatic.net/EUrcE.png) in VirtualBox.
 * Start the virtual machine.
 * The default user name _and_ password is `student`.
 
