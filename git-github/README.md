@@ -1,6 +1,10 @@
 # Tutorial: Version control with Git
 
-[Git](https://git-scm.com/) is a popular, free, distributed [version control system](https://www.atlassian.com/git/tutorials/what-is-version-control). In this tutorial, we will learn the day-to-day basics of working with Git and collaborating with others using the Git-based internet hosting service provided by [GitHub](https://github.com/). Completing this tutorial will help you in your research activities, e.g., to develop software more efficiently.
+[Git](https://git-scm.com/) is a popular, free, distributed [version control system](https://www.atlassian.com/git/tutorials/what-is-version-control). 
+
+In this tutorial, we will learn the day-to-day basics of working with Git and collaborating with others using the Git-based internet hosting service provided by [GitHub](https://github.com/). 
+
+Completing this tutorial will help you in your research activities, e.g., to develop software more efficiently.
 
 **Expected learning outcome**:
 
@@ -116,6 +120,28 @@ Cheat Sheets:
 > **Warning**
 > Don't experiment with Git in directories that contain not-backed-up files, such as homework, etc.
 
+## Why using Version Control System)?
+
+1. **Track changes in source code**
+   * Enable the ability to revert to a previous version if an issue arises.
+   * Support concurrent work on multiple "branches" of the software.
+   * Tag revisions to maintain records of which software version was used for specific purposes (e.g., "release-1.0", "paper-A-final", etc.).
+2. **Facilitate collaborative work**
+   * Allow multiple authors to make changes to the same code base simultaneously.
+   * Clearly communicate and visualize changes in the code base to all team members involved.
+
+## `Git` Workflow
+
+In `Git`, the source code or digital content is stored in a **repository**.
+
+- The repository not only contains the latest version of all files but also the complete history of all changes made to the files since their addition to the repository.
+- A user can **checkout** the repository to obtain a local working copy of the files. Changes are made to the files within the local working directory, where files can be added, removed, or updated.
+- Once a task is complete, the changes made to the local files are **committed** (saved) to the repository.
+- If someone else has made changes to the same files, a **conflict** may occur. In many cases, conflicts can be **resolved** automatically by the system; however, sometimes it may be necessary to **merge** the different changes manually.
+- It is often useful to create a new **branch** in a repository, or to **fork** or **clone** an entire repository, when undertaking larger experimental developments. The main branch in a repository is typically referred to as the **master** or **trunk**. Once work on a branch or fork is completed, it can be merged back into the master branch or repository.
+- With distributed RCSs such as Git or Mercurial, we can **pull** and **push** changesets between different repositories. For example, changes can be transferred between a local copy of the repository and a central online repository, such as one hosted on GitHub.
+
+## Self-Learning
 
 Study at least one of these resources alone or in small groups. Make sure you obtain a basic understanding of the standard Git commands, including the following ones:
 * `git help`
