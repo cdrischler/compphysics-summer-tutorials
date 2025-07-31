@@ -120,7 +120,7 @@ Cheat Sheets:
 > **Warning**
 > Don't experiment with Git in directories that contain not-backed-up files, such as homework, etc.
 
-## Why using Version Control System)?
+## Why using Version Control System (VCS)?
 
 1. **Track changes in source code**
    * Enable the ability to revert to a previous version if an issue arises.
