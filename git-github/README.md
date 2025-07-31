@@ -6,6 +6,8 @@ In this tutorial, we will learn the day-to-day basics of working with Git and co
 
 Completing this tutorial will help you in your research activities, e.g., to develop software more efficiently.
 
+See also the Jupyter version of the [Git/GitHub tutorial](git_tutorial.ipynb).
+
 **Expected learning outcome**:
 
 - [x] Set up Git on your computer for software development
