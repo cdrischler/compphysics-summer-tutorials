@@ -1,4 +1,4 @@
-# Computational Physics Summer Tutorials 2024 <!-- omit from toc -->
+# Computational Physics Summer Tutorials 2025 <!-- omit from toc -->
 
 ## Table of contents <!-- omit from toc -->
 
@@ -15,31 +15,31 @@
 
 ## Overview
 
-To help students prepare for the fall semester course Computer Simulation Methods in Physics (PHYS 4071/5071) at Ohio University, we are offering this year one-hour tutorials twice a week in the Computer Lab in Clippinger Lab (PHYS 6900 102 Special Topics in Physics). These tutorials consist of lectures, hands-on learning activities, and a final project.
+Welcome to the 2025 Computational Physics Summer Tutorials! This five-week course will cover the basics of scientific computing, including the Python programming language. 
 
-You will need to register to attend this course. Overall participation and the final project will be used to grade the participants upon completion of the project. Working in small groups is _highly_ encouraged. Contact the instructors (see below) if you cannot participate in the tutorials. 
+While everyone is welcome to attend all or selected sessions, it also helps students prepare for the fall semester course "Computer Simulation Methods in Physics" (PHYS 4071/5071) at Ohio University. This year, we are offering one-hour tutorials twice a week in the Computer Lab in Clippinger Lab (PHYS 6900 102 Special Topics in Physics). These tutorials consist of lectures, hands-on learning activities, and a final project.
 
-> **Warning**
-> We no longer require first-year graduate students to sign up for a C-course in the CS department or complete an intro to Python module in [Coursera](https://www.coursera.org/).
+Please register if you want to attend this course. Upon completion of the final project, the participants' overall participation and the final project will be used to grade them. Working in small groups is highly encouraged. Contact the instructors (see below) if you cannot participate in the tutorials. 
 
 The following tutorials (Tuesdays and Thursdays) will be offered this year:
 
 | Tutorial       | Dates | 
 | ----------- | ----------- |
-| [Basic UNIX](unix_tutorial.ipynb)        | 5/14 @ **2:45 pm** & 5/16 @ **3 pm** | 
-| [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb)         | 5/21 & 5/23 @ 3 pm | 
-| [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb)        | 5/28 & 5/30 @ 3 pm | 
-| [Basic Git](git-github/README.md)          | 6/4 & 6/6 @ 3 pm | 
-| [Final project](final_project/final_project.ipynb)           | 6/11 & 6/13 @ 3 pm | 
+| [Basic UNIX](unix_tutorial.ipynb) (CC)       | 7/8 @ **2:45 pm** & 7/10 @ **3 pm** | 
+| [Basic Python 3: numpy, scipy, pandas](python_tutorial.ipynb) (RW)         | 7/15 & 7/17 @ 3 pm | 
+| [Basic Plotting: xmgrace, gnuplot, and matplotlib](plotting_tutorial/plotting_tutorial.ipynb) (RW)        | 7/22 & 7/24 @ 3 pm | 
+| [Basic Git/GitHub](git-github/README.md) (CD)         | 7/29 & 7/31 @ 3 pm | 
+| [Final project](final_project/final_project.ipynb)           | 8/5 & 8/7 @ 3 pm | 
 
 Feel free to suggest topics for future summer tutorials.
 
 **Instructors** for these tutorials are (in alphabetical order):
-* [Christian Drischler](https://www.ohio.edu/cas/drischler) (CD, lead instructor)
+* [Chase Cartwright](https://www.ohio.edu/cas/cc627122) (CC)
+* [Christian Drischler](https://www.ohio.edu/cas/drischler) (CD)
 * [Rawan Nowier](https://www.ohio.edu/cas/rn757120) (RN)
 
-We are grateful to Charlotte Elster and Kanishk Chauhan for fruitful discussions and lecture material from the 2023 Summer Tutorials.
-
+The tutorials were previously held in the summers of 2023 and 2024. 
+We are grateful to Charlotte Elster and Kanishk Chauhan for their fruitful discussions and for providing lecture material from the 2023 Summer Tutorials.
 
 ## More tutorials (optional)
 
@@ -90,11 +90,12 @@ We use VirtualBox to virtualize Ubuntu Linux on your host computer, which can ru
 > You don't need to follow these steps on the computers in the Computer Lab. Just start up your virtual machine in VirtualBox that you created in the first lecture week.
 
 Follow these steps to set up our customized environment with pre-installed software on your lab computer:
-* Download and install [VirtualBox](https://www.virtualbox.org/).
-* Download our [customized VirtualBox hard drive](https://catmailohio-my.sharepoint.com/:u:/g/personal/drischler_ohio_edu/EYlLoSurm6tMq-rGL-Je98IBXPSi9yRtjmuERZPfB9j8Mg?e=bFu9oU), which contains pre-installed Ubuntu Linux and other software. You will need an Ohio U account to access the hard drive. 
-* In VirtualBox, navigate to `File-Import Appliance` in the menu and import the downloaded file (e.g., `/Users/student/ubuntu-compphys.ova`).
+* Download and install [VirtualBox](https://www.virtualbox.org/). **On Lab computers, this step can be skipped.**
+* Locate the customized virtual hard drive (ask the instructors), which contains pre-installed Ubuntu Linux and other software. On Lab computers, it should be located in `C:\VirtualBox VMs`.
+* In VirtualBox, navigate to `File-Import Appliance` in the menu and import the virtual hard drive file (e.g., `C:\VirtualBox VMs\ubuntu-compphys.ova`).
+* In the [settings of your new virtual machine](https://i.sstatic.net/EUrcE.png), disable the USB controller.
 * Start the virtual machine.
-* The default user name _and_ password is `student`. It makes sense to change the password.
+* The default user name _and_ password is `student`.
 
 > **Note**
 > Using our customized hard drive (instead of installing Ubuntu yourself) is highly recommended. The hard drive can be used with VirtualBox on any computer, including your personal computer.
