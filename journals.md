@@ -116,9 +116,9 @@ Ohio University provides resources to access scientific articles published in a 
 
 One way to use these resources is by setting two different [bookmarks](https://support.mozilla.org/en-US/kb/bookmarks-firefox#w_how-do-i-bookmark-a-page) for **proxy links** in your browser: one for Ohio University (for when OU has a subscription to the journal) and another one through OhioLink (if the subscription is available that way).   
 
-For OU subscription journals (which is a lot), create a web browser bookmark with the location: 
+For OU subscription journals (which are a lot), create a web browser bookmark with the location: 
 ```
-javascript:void(location.href=%22http://proxy.library.ohio.edu/login?url=%22+location.href);  
+javascript:void(location.href=%22http://proxy2.library.ohio.edu/login?url=%22+location.href);  
 ```
 For Ohio Link, create the bookmark with the location: 
 ```
@@ -132,7 +132,7 @@ Notice that these minimalistic `javascript`s append the proxy link to the curren
 When on the journal page for a specific article, click the bookmark:
 
 * For the OU proxy link, you are re-routed to authenticate and then re-routed back to the journal page, but now with access (if OU has a subscription). 
-* For OhioLink, you are re-routed to Ohio Link to select “Ohio University” and then an authentication page. Then, you are automatically rerouted back to the journal page, now with access (assuming there is a subscription through OhioLink).
+* For OhioLink, you are rerouted to OhioLink to select “Ohio University” and then an authentication page. Then, you are automatically rerouted back to the journal page, now with access (assuming there is a subscription through OhioLink).
 
 **Tip: If an article (or any other item such as books) you need is not available,  you can request it through [Interlibrary Loan](https://www.ohio.edu/library/services/borrowing/interlibrary-loan) provided by University Libraries.**
 
