@@ -136,9 +136,17 @@ When on the journal page for a specific article, click the bookmark:
 
 **Tip: If an article (or any other item such as books) you need is not available,  you can request it through [Interlibrary Loan](https://www.ohio.edu/library/services/borrowing/interlibrary-loan) provided by University Libraries.**
 
-## Questions?
+## What is a Digital Object Identifier?
 
-__I have more questions - who can I ask?__
+A Digital Object Identifier (DOI) is a unique and permanent identifier assigned to a **digital object**, most commonly academic articles, research papers, books, and datasets. It functions like a digital fingerprint or ID number for content on the internet, making it easy to locate and reference reliably.
+
+Unlike regular URLs, which may break or change over time, a DOI always points to the object, even if its web address changes. Because of this permanence, DOIs are widely used in academic publishing to ensure research can be consistently found and cited.
+
+To make repositories easier to reference in academic literature, developers and researchers can create these persistent identifiers for their work. For example, a GitHub repository can be archived using Zenodo, which then issues a DOI for the archived version of the repository. This process is very simple and can be completed in a few steps, as described [here](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content).
+
+A DOI typically follows a standard format such as `10.1000/xyz123`.
+
+## More questions?
 
 Feel free to contact me if you have any questions. You might also want to discuss this subject with your advisor(s).
 
