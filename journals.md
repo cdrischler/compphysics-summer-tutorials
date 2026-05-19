@@ -16,7 +16,8 @@ This tutorial was given by Christian Drischler (OU) for the 2024 Summer tutorial
 - [Researching scientific journals](#researching-scientific-journals)
 - [Reference management software](#reference-management-software)
 - [Accessing published articles](#accessing-published-articles)
-- [Questions?](#questions)
+- [That is a digital object identifier?](#what-is-a-digital-object-identifier)
+- [More questions?](#more-questions)
 
 
 ## Scientific journals
@@ -108,7 +109,7 @@ While there is no general answer to this question, here is an _incomplete_ list 
 Feel free to explore different reference managers and choose the one that best suits your needs and interests. See also [here](https://libguides.mit.edu/c.php?g=695148&p=4928673) for more information.
 
 
-## Accessing published articles
+## Accessing published articles 
 
 __How do I access published articles for which access is typically restricted?__
 
